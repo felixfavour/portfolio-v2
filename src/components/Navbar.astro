@@ -1,0 +1,107 @@
+---
+import Logo from "./Logo.astro"
+---
+
+<div class={`navbar-ctn section`}>
+  <div class="inner">
+    <Logo light={true} />
+    <ul class="nav-actions">
+      <li>
+        <a href="/books">Reading</a>
+      </li>
+      <li>
+        <a href="/stories">Writing</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script is:inline>
+  const navbar = document.querySelector('.navbar-ctn.section')
+  const navBtn = document.querySelector('.navbar-form-btn')
+
+  navBtn.addEventListener('click', () =>  {
+    if (navbar.classList.contains('active-form')) {
+      navbar.classList.remove('active-form')
+    } else {
+      navbar.classList.add('active-form')
+    }
+  })
+
+  // Navbar offset anim
+  addEventListener('scroll', () => {
+    if (window.scrollY > 110) {
+      navbar.classList.add('offsetted')
+    } else {
+      navbar.classList.remove('offsetted')
+    }
+  })
+
+  // Navbar email anim
+  addEventListener('scroll', () => {
+    if (window.scrollY > 600) {
+      navbar.classList.add('active-form')
+    } else {
+      navbar.classList.remove('active-form')
+    }
+  })
+</script>
+
+<style>
+  .navbar-ctn {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    inset: 0;
+    top: 0;
+    bottom: auto;
+    transition: var(--anim-interval);
+    z-index: 3;
+  }
+  .section > .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--anim-interval);
+  }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+  .nav-actions a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  /* Offsetted Navbar */
+  .offsetted {
+    transform: translateY(1rem);
+    position: fixed;
+  }
+  .section.offsetted > .inner {
+    background: #FFFFFF;
+    padding: 1.2rem 3rem;
+    border-radius: 32px;
+    box-shadow: 0px 10px 20px rgba(2, 129, 255, 0.05);
+		max-width: calc(var(--desktop-width-lg) + 6rem);
+  }
+
+
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 1500px) {
+  }
+
+  @media screen and (max-width: 1100px) {
+  }
+
+  @media screen and (max-width: 920px) {
+  }
+
+  @media screen and (max-width: 600px) {
+  }
+</style>
