@@ -1,53 +1,92 @@
 ---
+import ItemCard from '../components/ItemCard.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-	<main>
-	</main>
+	<div class="section">
+		<div class="inner">
+			<div class="texts">
+				<h1>I am <span class="emphatic">crafting</span> a future I can be <span class="emphatic">proud</span> of</h1>
+				<h2>and, I honestly can’t keep it to myself.</h2>
+				<p>
+					I am currently entrepreneur-ing at <a target="_blank" href="https://revaise.com" class="bold">Revaise</a> (we are revolutionising peer reviews in the workplace), and being the best software engineer I can be at  <a target="_blank" href="https://acumen.digital" class="bold">Acumen</a>.
+				</p>
+			</div>
+
+			<!-- MOST RECENT WRITING -->
+			<section>
+				<h3 class="mini-heading">
+					Most recent writing
+				</h3>
+				<div class="list">
+					<ItemCard />
+					<ItemCard />
+					<ItemCard />
+				</div>
+				<a href="/stories">See everything I’ve written</a>
+			</section>
+
+			<!-- MOST RECENT WRITING -->
+			<section>
+				<h3 class="mini-heading">
+					Books read this year
+				</h3>
+				<div class="list">
+					<ItemCard />
+					<ItemCard />
+					<ItemCard />
+				</div>
+				<a href="/books">See all books I’ve read</a>
+			</section>
+		</div>
+	</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+	.texts {
+		padding: 5rem 0;
+		padding-top: 7rem;
 	}
 	h1 {
+		font-weight: 500;
+		font-size: 3.5rem;
+		line-height: 4.1rem;
+	}
+	h2 {
+		font-weight: 400;
 		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
+		line-height: 4rem;
+		padding-top: 0.6rem;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	p {
+		font-weight: 300;
+		font-size: 2rem;
+		line-height: 3rem;
+		margin-top: 2rem;
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
+	p a {
+		text-decoration: none;
+		border-bottom: 1px solid #000000;
+		color: #000000;
 	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
+
+	section {
+		margin-bottom: 5rem;
 	}
-	.instructions strong {
-		color: rgb(var(--accent));
+	section a {
+		font-size: 1.2rem;
+		border-bottom: 1px solid #000000;
+		color: #000000;
+		text-decoration: none;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	.list {
+		margin-bottom: 2rem;
+	}
+	h3 {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: var(--primary-dark);
 	}
 </style>
