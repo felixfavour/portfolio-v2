@@ -16,47 +16,17 @@ import Logo from "./Logo.astro"
   </div>
 </div>
 
-<script is:inline>
-  const navbar = document.querySelector('.navbar-ctn.section')
-  const navBtn = document.querySelector('.navbar-form-btn')
-
-  navBtn.addEventListener('click', () =>  {
-    if (navbar.classList.contains('active-form')) {
-      navbar.classList.remove('active-form')
-    } else {
-      navbar.classList.add('active-form')
-    }
-  })
-
-  // Navbar offset anim
-  addEventListener('scroll', () => {
-    if (window.scrollY > 110) {
-      navbar.classList.add('offsetted')
-    } else {
-      navbar.classList.remove('offsetted')
-    }
-  })
-
-  // Navbar email anim
-  addEventListener('scroll', () => {
-    if (window.scrollY > 600) {
-      navbar.classList.add('active-form')
-    } else {
-      navbar.classList.remove('active-form')
-    }
-  })
-</script>
-
 <style>
   .navbar-ctn {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    /* position: absolute; */
+    position: fixed;
     inset: 0;
     top: 0;
     bottom: auto;
     z-index: 3;
+    background: #FFF8EE;
   }
   .section > .inner {
     display: flex;
@@ -100,5 +70,14 @@ import Logo from "./Logo.astro"
   }
 
   @media screen and (max-width: 600px) {
+    .navbar-ctn {
+      height: 50px;
+    }
+    .nav-actions {
+      gap: 1rem;
+    }
+    .nav-actions a {
+      font-size: 0.9rem;
+    }
   }
 </style>
