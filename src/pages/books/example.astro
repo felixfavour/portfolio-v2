@@ -1,0 +1,100 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Writing">
+	<div class="section">
+		<div class="inner">
+      <h2 class="title">
+        Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
+      </h2>
+      <div class="row">
+        <div>336 pages</div>
+        <div>By <span class="bold">Chinua Achebe</span></div>
+      </div>
+      <main>
+        <div class="cover-img-ctn">
+          <div class="backdrop"></div>
+          <div class="cover-img"></div>
+        </div>
+        <div class="texts">
+          <h3>Book Review</h3>
+          <p>
+            <span>I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.</span>
+            <span>I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. </span>
+          </p>
+        </div>
+      </main>
+		</div>
+	</div>
+</Layout>
+
+<style>
+  .inner {
+    padding-top: 5rem;
+  }
+	.title {
+		font-weight: 500;
+		font-size: 3.5rem;
+		line-height: 4.1rem;
+	}
+  .row {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .row > div:nth-child(1) {
+    border-right: 2px solid #E7E7E7;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+  main {
+    display: flex;
+    gap: 3rem;
+  }
+  .cover-img-ctn {
+    background-color: var(--primary-dark);
+    width: 450px;
+    min-width: 450px;
+    height: 700px;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  .cover-img {
+    background-color: var(--primary-dark);
+    width: 450px;
+    min-width: 450px;
+    height: 700px;
+    border-radius: 16px;
+    position: absolute;
+    inset: 0;
+  }
+  .backdrop {
+    background-color: var(--primary);
+    width: 450px;
+    min-width: 450px;
+    height: 700px;
+    border-radius: 16px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+  p > span {
+    margin-bottom: 2rem;
+    display: block;
+    font-family: 'IBM Plex Serif', sans-serif;
+  }
+</style>

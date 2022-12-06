@@ -1,0 +1,52 @@
+---
+import BookCard from '../../components/BookCard.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Reading">
+	<div class="section">
+		<div class="inner">
+      <section>
+        <h2>Books I read this year.</h2>
+        <div class="list">
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+        </div>
+      </section>
+      <section>
+        <h2>Books I read last year.</h2>
+        <div class="list">
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+        </div>
+      </section>
+      <section>
+        <h2>Books I read in 2020.</h2>
+        <div class="list">
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+        </div>
+      </section>
+		</div>
+	</div>
+</Layout>
+
+<style>
+  .inner {
+    padding-top: 5rem;
+  }
+	h2 {
+		font-weight: 400;
+		font-size: 3rem;
+		line-height: 4rem;
+		padding-top: 0.6rem;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+	}
+
+	section {
+		margin-bottom: 5rem;
+	}
+</style>

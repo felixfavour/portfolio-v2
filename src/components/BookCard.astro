@@ -1,0 +1,37 @@
+---
+export interface Props {
+  book: object
+}
+---
+
+<div class="card-ctn">
+  <a href="/books/example" class="title">
+    Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
+  </a>
+  <div class="row">
+    <div>336 pages</div>
+    <div>By <span class="bold">Chinua Achebe</span></div>
+  </div>
+</div>
+
+<style>
+  .card-ctn {
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+  }
+  .row {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0.6rem;
+  }
+  .row > div:nth-child(1) {
+    border-right: 2px solid #E7E7E7;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+</style>
