@@ -129,7 +129,6 @@ const { title, description, img } = Astro.props;
 		width: 100%;
 		margin: auto;
 	}
-
 	.emphatic {
 		color: var(--primary-dark);
 	}
@@ -148,16 +147,14 @@ const { title, description, img } = Astro.props;
 	------------*/
 	@media screen and (max-width: 1500px) {
 		.section > .inner {
-			max-width: var(--desktop-width);
+			width: 80%;
 		}
 	}
 
-
-  /* MEDIA QUERIES */
-  @media screen and (max-width: 1500px) {
-  }
-
   @media screen and (max-width: 1100px) {
+		.section > .inner {
+			width: 90%;
+		}
   }
 
   @media screen and (max-width: 920px) {
