@@ -5,8 +5,9 @@ title: CSS and Motion — You Too Can Build Animations on The Web
 draft: false
 pages: 0
 author: Favour Felix
-cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/books%2Ftwac.webp?alt=media&token=5912f361-7506-42b2-a986-e3d82b97a30b'
-readTime: 0 mins
+cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
+banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
+readTime: 5 mins
 year: 2022
 date: September 26, 2022
 updatedAt: September 17, 2022 2:34 PM

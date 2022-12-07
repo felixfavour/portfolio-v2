@@ -3,7 +3,15 @@ import Layout from "./Layout.astro";
 const {frontmatter} = Astro.props;
 ---
 
-<Layout title="Writing">
+<Layout 
+  title={`${frontmatter.title} - Favour Felix`}
+  description={frontmatter.excerpt}
+  img={frontmatter.banner}
+  type="article"
+  readTime={frontmatter.readTime}
+  publishedDate={new Date(frontmatter.date).toISOString()}
+  lastUpdated={new Date(frontmatter.updatedAt).toISOString()}
+>
 	<div class="section">
 		<div class="inner">
       <h2 class="title">
@@ -16,7 +24,7 @@ const {frontmatter} = Astro.props;
       <main>
         <div class="cover-img-ctn">
           <div class="backdrop" />
-          <div class="cover-img" />
+          <div class="cover-img" style={`background-image: url(${frontmatter.cover})`} />
         </div>
         <article>
           <slot />
@@ -48,7 +56,7 @@ const {frontmatter} = Astro.props;
     margin-right: 1rem;
   }
   .cover-img-ctn {
-    height: 550px;
+    height: 600px;
     position: relative;
     width: 100%;
     margin-bottom: 3rem;
@@ -56,6 +64,9 @@ const {frontmatter} = Astro.props;
   }
   .cover-img {
     background-color: var(--primary-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100%;
     position: absolute;
     inset: 0;
@@ -112,14 +123,14 @@ const {frontmatter} = Astro.props;
       margin-right: 0.6rem;
     }
     .cover-img-ctn {
-      height: 250px;
+      height: 200px;
       margin-bottom: 2rem;
     }
     .cover-img {
-      height: 250px;
+      height: 200px;
     }
     .backdrop {
-      height: 250px;
+      height: 200px;
       top: 0.4rem;
       left: -0.4rem;
     }

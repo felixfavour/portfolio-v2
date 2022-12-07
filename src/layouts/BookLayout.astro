@@ -3,7 +3,15 @@ import Layout from "./Layout.astro";
 const {frontmatter} = Astro.props;
 ---
 
-<Layout title="Writing">
+<Layout 
+	title={`${frontmatter.title} - Favour Felix`}
+	description={frontmatter.excerpt}
+  img={frontmatter.banner}
+  type="article"
+  readTime={frontmatter.readTime}
+  publishedDate={new Date(frontmatter.date).toISOString()}
+  lastUpdated={new Date(frontmatter.updatedAt).toISOString()}
+>
 	<div class="section">
 		<div class="inner">
       <h2 class="title">
