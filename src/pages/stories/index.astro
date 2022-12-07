@@ -1,34 +1,30 @@
 ---
 import StoryCard from '../../components/StoryCard.astro';
 import Layout from '../../layouts/Layout.astro';
+
+let stories = await Astro.glob('../stories/*.md');
+stories = stories.sort((a, b) => a.frontmatter.year - b.frontmatter.year)
+
+const currentYear = new Date().getFullYear()
+
+let storyYears: Set<number> | Array<number> = new Set()
+for (const story of stories) {
+	storyYears.add(story.frontmatter.year)
+}
+storyYears = Array.from(storyYears)
 ---
 
 <Layout title="Writing">
 	<div class="section">
 		<div class="inner">
-      <section>
-        <h2>My writings for this year.</h2>
+      {storyYears.map(year => <section>
+        {year === currentYear && <h2>Articles I wrote this year.</h2>}
+        {year === currentYear - 1 && <h2>Articles I wrote last year.</h2>}
+        {year < currentYear - 1 && <h2>Articles I wrote in {year}</h2>}
         <div class="list">
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					{stories.filter(story => story.frontmatter.year === year).map(story => <StoryCard story={story} />)}
         </div>
-      </section>
-      <section>
-        <h2>My writings for last year.</h2>
-        <div class="list">
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-        </div>
-      </section>
-      <section>
-        <h2>My writings for 2020.</h2>
-        <div class="list">
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-        </div>
-      </section>
+      </section>)}
 		</div>
 	</div>
 </Layout>

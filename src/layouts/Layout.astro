@@ -191,11 +191,42 @@ const { title, description, img } = Astro.props;
 	.logo:hover {
 		color: #000000;
 	}
+
+	/* ARTICLE STYLES */
+	article {
+		max-width: 850px;
+		margin-right: auto;
+		margin-left: auto;
+	}
   article p {
     font-family: 'IBM Plex Serif', sans-serif;
     padding-bottom: 2rem;
     display: block;
   }
+	article a {
+    font-family: 'IBM Plex Serif', sans-serif;
+		font-weight: 500;
+		text-decoration: none;
+		border-bottom: 1px solid;
+	}
+  article h1, article h2, article h3 {
+    color: var(--primary-dark);
+    font-weight: 600;
+  }
+	.astro-code {
+		padding: 1rem 2rem;
+		border-radius: 16px;
+		margin-bottom: 2rem;
+	}
+	.astro-code * {
+		font-family: monospace;
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	code {
+		font-family: monospace;
+		color: var(--primary);
+	}
 
 	/* ----------
 	MEDIA QUERIES

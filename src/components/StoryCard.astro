@@ -1,16 +1,18 @@
 ---
 export interface Props {
-  story: object
+  story: object | any
 }
+
+const { story } = Astro.props;
 ---
 
 <div class="card-ctn">
-  <a href="/stories/example" class="title">
-    Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
+  <a href={story.url} class="title">
+    {story.frontmatter.title}
   </a>
   <div class="row">
-    <div>November 11, 2022</div>
-    <div>Read for <span class="bold">5 Minutes</span></div>
+    <div>{ story.frontmatter.date }</div>
+    <div>Read for <span class="bold">{ story.frontmatter.readTime }</span></div>
   </div>
 </div>
 

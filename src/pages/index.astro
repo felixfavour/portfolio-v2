@@ -5,6 +5,9 @@ import Layout from '../layouts/Layout.astro';
 
 let books = await Astro.glob('../pages/books/*.md');
 books = books.sort((a, b) => a.frontmatter.yearRead - b.frontmatter.yearRead).slice(0, 3)
+
+let stories = await Astro.glob('../pages/stories/*.md');
+stories = stories.sort((a, b) => new Date(a.frontmatter.updatedAt).getTime() - new Date(b.frontmatter.updatedAt).getTime())
 ---
 
 <Layout title="Home">
@@ -24,9 +27,7 @@ books = books.sort((a, b) => a.frontmatter.yearRead - b.frontmatter.yearRead).sl
 					Most recent writing
 				</h3>
 				<div class="list">
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<StoryCard story={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					{stories.map(story => <StoryCard story={story} />)}
 				</div>
 				<a href="/stories">See everything I’ve written</a>
 			</section>
@@ -34,7 +35,7 @@ books = books.sort((a, b) => a.frontmatter.yearRead - b.frontmatter.yearRead).sl
 			<!-- MOST RECENT WRITING -->
 			<section>
 				<h3 class="mini-heading">
-					Books read this year
+					Some books read this year
 				</h3>
 				<div class="list">
 					{books.map(book => <BookCard book={book} />)}
