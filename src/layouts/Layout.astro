@@ -6,14 +6,19 @@ import Footer from '../components/Footer.astro';
 const defaultTitle = 'Favour Felix'
 const defaultDescription = 'Favour Felix website'
 const defaultImage = 'https://firebasestorage.googleapis.com/v0/b/revaise-app.appspot.com/o/images%2Frvs-banner.webp?alt=media&token=a7419e8c-e3ab-495b-bbbc-2a473fc67581'
+const defaultType = 'website'
 
 export interface Props {
 	title: string,
 	description: string,
-	img: string
+	img: string,
+	type: string,
+	readTime: string,
+	publishedDate: string,
+	lastUpdated: string
 }
 
-const { title, description, img } = Astro.props;
+const { title, description, img, type, readTime, publishedDate, lastUpdated } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -28,12 +33,20 @@ const { title, description, img } = Astro.props;
 		<meta name="og:title" content={title || defaultTitle}>
 		<meta name="og:description" content={description || defaultDescription}>
 		<meta name="og:image" content={img || defaultImage}>
-		<meta name="og:type" content="website">
+		<meta name="og:type" content={type || defaultType}>
 		<meta name="og:site_name" content={defaultTitle}>
 		<meta name="og:url" content="https://favourfelix.com">
 		<meta name="twitter:card" content="">
 		<meta name="twitter:title" content={title || defaultTitle}>
 		<meta name="twitter:description" content={description || defaultDescription}>
+		<meta name="author" content="Favour Felix">
+		<meta name="article:publisher" content={ type === 'article' ? 'Favour Felix' : '' }>
+		<meta name="article:published_time" content={ type === 'article' ? publishedDate : '' }>
+		<meta name="article:modified_time" content={ type === 'article' ? lastUpdated : '' }>
+		<meta name="twitter:label1" content={ type === 'article' ? 'Written by' : '' }>
+		<meta name="twitter:data1" content={ type === 'article' ? 'Favour Felix' : '' }>
+		<meta name="twitter:label2" content={ type === 'article' ? 'Est. reading time' : '' }>
+		<meta name="twitter:data2" content={ type === 'article' ? readTime : '' }>
 		<meta name="twitter:site" content="">
 		<meta name="twitter:creator" content="">
 		<title>{title}</title>

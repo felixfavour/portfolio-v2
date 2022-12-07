@@ -12,12 +12,12 @@ for (const book of books) {
 	bookYears.add(book.frontmatter.year)
 }
 bookYears = Array.from(bookYears)
-
-// const booksCurrentYear = books.filter(book => book.frontmatter.yearRead === year)
-// const books  = books.filter(book => book.frontmatter.yearRead === year)
 ---
 
-<Layout title="Reading">
+<Layout 
+	title="Books — Favour Felix" 
+	description="I love reading, but I don't do a lot of it; whenever I do, I share my learnings and summarise them here. You should check them out."
+>
 	<div class="section">
 		<div class="inner">
       {bookYears.map(year => <section>

@@ -10,7 +10,10 @@ let stories = await Astro.glob('../pages/stories/*.md');
 stories = stories.sort((a, b) => new Date(a.frontmatter.updatedAt).getTime() - new Date(b.frontmatter.updatedAt).getTime())
 ---
 
-<Layout title="Home">
+<Layout 
+	title="Favour Felix — Entrepreneur, Software Engineer" 
+	description="I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen."
+>
 	<div class="section">
 		<div class="inner">
 			<div class="texts">
