@@ -12,9 +12,35 @@ import Logo from "./Logo.astro"
       <li>
         <a href="/stories">Writing</a>
       </li>
+      <li>
+        <button id="theme-toggle" class="clear-btn">
+          <svg id="light-svg" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+          <svg id="dark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        </button>
+      </li>
     </ul>
   </div>
 </div>
+
+<script>
+  const themeBtn = document.querySelector('#theme-toggle')
+  const lightIcon = document.querySelector('#light-svg')
+  const darkIcon = document.querySelector('#dark-svg')
+  const body = document.querySelector('body')
+  themeBtn?.addEventListener('click', () => {
+    if (body?.classList.contains('dark')) {
+      localStorage.setItem('theme', 'light')
+      body.classList.remove('dark')
+      darkIcon?.classList.remove('hidden')
+      lightIcon?.classList.add('hidden')
+    } else {
+      localStorage.setItem('theme', 'dark')
+      body?.classList.add('dark')
+      lightIcon?.classList.remove('hidden')
+      darkIcon?.classList.add('hidden')
+    }
+  })
+</script>
 
 <style>
   .navbar-ctn {
@@ -26,7 +52,7 @@ import Logo from "./Logo.astro"
     top: 0;
     bottom: auto;
     z-index: 3;
-    background: #FFF8EE;
+    background: var(--bg-light);
   }
   .section > .inner {
     display: flex;
@@ -43,6 +69,22 @@ import Logo from "./Logo.astro"
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
+  }
+  .clear-btn {
+    height: 36px;
+    width: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+    padding: 0;
+  }
+  .clear-btn:hover {
+    background: var(--primary);
+  }
+  .clear-btn svg {
+    width: 24px;
   }
 
   /* Offsetted Navbar */
@@ -78,6 +120,13 @@ import Logo from "./Logo.astro"
     }
     .nav-actions a {
       font-size: 0.9rem;
+    }
+    .clear-btn {
+      height: 28px;
+      width: 28px;
+    }
+    .clear-btn svg {
+      width: 22px;
     }
   }
 </style>

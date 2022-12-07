@@ -48,6 +48,17 @@ const { title, description, img } = Astro.props;
 	</body>
 </html>
 
+<script>
+  const body = document.querySelector('body')
+  const lightIcon = document.querySelector('#light-svg')
+  const darkIcon = document.querySelector('#dark-svg')
+	if (localStorage.getItem('theme') === 'dark') {
+		body?.classList.add('dark')
+		lightIcon?.classList.remove('hidden')
+		darkIcon?.classList.add('hidden')
+	}
+</script>
+
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Inter:wght@300;400;500;600&display=swap');
 
@@ -64,8 +75,10 @@ const { title, description, img } = Astro.props;
 		--header-height: 100px;
 	
 		/* HUES */
+		--bg-light: #FFF8EE;
 		--primary: #FFAB2D;
 		--primary-dark: #DE8500;
+		--primary-deep-dark: #362000;
 	
 		/* DURATION */
 		--anim-interval: 0.3s;
@@ -80,11 +93,45 @@ const { title, description, img } = Astro.props;
 		scroll-behavior: smooth;
 	}
 	body {
-		background: #FFF8EE;
+		background: var(--bg-light);
 		padding-top: 100px;
 	}
 	a {
 		color: #000000;
+	}
+
+	/* DARK MODE */
+	body.dark {
+		background: var(--primary-deep-dark);
+		color: var(--bg-light);
+	}
+	body.dark .navbar-ctn {
+		background: var(--primary-deep-dark);
+		color: var(--bg-light);
+	}
+	body.dark a {
+		color: var(--bg-light);
+	}
+	body.dark a:hover {
+		color: var(--primary-dark);
+	}
+	body.dark .logo:hover {
+		color: var(--bg-light);
+	}
+	body.dark svg, body.dark svg path {
+		fill: var(--bg-light);
+	}
+	body.dark a {
+		border-color: var(--bg-light);
+	}
+	body.dark .footer-ctn {
+		border-color: #683f00;
+	}
+	body.dark .row > div:nth-child(1) {
+		border-color: #683f00;
+  }
+	.hidden {
+		display: none;
 	}
 
 	/*-----------
@@ -92,7 +139,6 @@ const { title, description, img } = Astro.props;
 	-------------*/
 	button {
 		cursor: pointer;
-		transition: var(--anim-interval);
 	}
 	.primary-btn {
 		border: none;
