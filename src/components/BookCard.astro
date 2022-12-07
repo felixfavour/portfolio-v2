@@ -1,16 +1,18 @@
 ---
 export interface Props {
-  book: object
+  book: object | any
 }
+
+const { book } = Astro.props;
 ---
 
 <div class="card-ctn">
-  <a href="/books/example" class="title">
-    Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
+  <a href={book.url} class="title">
+    {book.frontmatter.title}
   </a>
   <div class="row">
-    <div>336 pages</div>
-    <div>By <span class="bold">Chinua Achebe</span></div>
+    <div>{book.frontmatter.pages} pages</div>
+    <div>By <span class="bold">{book.frontmatter.author}</span></div>
   </div>
 </div>
 

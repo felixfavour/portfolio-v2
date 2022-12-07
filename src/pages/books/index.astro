@@ -1,34 +1,33 @@
 ---
 import BookCard from '../../components/BookCard.astro';
 import Layout from '../../layouts/Layout.astro';
+
+let books = await Astro.glob('../books/*.md');
+books = books.sort((a, b) => a.frontmatter.year - b.frontmatter.year)
+
+const currentYear = new Date().getFullYear()
+
+let bookYears: Set<number> | Array<number> = new Set()
+for (const book of books) {
+	bookYears.add(book.frontmatter.year)
+}
+bookYears = Array.from(bookYears)
+
+// const booksCurrentYear = books.filter(book => book.frontmatter.yearRead === year)
+// const books  = books.filter(book => book.frontmatter.yearRead === year)
 ---
 
 <Layout title="Reading">
 	<div class="section">
 		<div class="inner">
-      <section>
-        <h2>Books I read this year.</h2>
+      {bookYears.map(year => <section>
+        {year === currentYear && <h2>Books I read this year.</h2>}
+        {year === currentYear - 1 && <h2>Books I read last year.</h2>}
+        {year < currentYear - 1 && <h2>Books I read in {year}</h2>}
         <div class="list">
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					{books.filter(book => book.frontmatter.year === year).map(book => <BookCard book={book} />)}
         </div>
-      </section>
-      <section>
-        <h2>Books I read last year.</h2>
-        <div class="list">
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-        </div>
-      </section>
-      <section>
-        <h2>Books I read in 2020.</h2>
-        <div class="list">
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-        </div>
-      </section>
+      </section>)}
 		</div>
 	</div>
 </Layout>

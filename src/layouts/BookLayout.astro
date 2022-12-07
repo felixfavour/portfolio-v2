@@ -1,28 +1,28 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "./Layout.astro";
+const {frontmatter} = Astro.props;
 ---
 
 <Layout title="Writing">
 	<div class="section">
 		<div class="inner">
       <h2 class="title">
-        Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
+        { frontmatter.title }
       </h2>
       <div class="row">
-        <div>336 pages</div>
-        <div>By <span class="bold">Chinua Achebe</span></div>
+        <div>{ frontmatter.pages } pages</div>
+        <div>By <span class="bold">{ frontmatter.author }</span></div>
       </div>
       <main>
         <div class="cover-img-ctn">
           <div class="backdrop"></div>
-          <div class="cover-img"></div>
+          <div class="cover-img" style={`background-image: url(${frontmatter.cover})`}></div>
         </div>
         <div class="texts">
           <h3>Book Review</h3>
-          <p>
-            <span>I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.</span>
-            <span>I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. Your Guide to Hacking CSS Units and Dimensions — One Size Could Fit AllI know there’s a lot to tell about me.I know there’s a lot to tell about me, but there’s a lot to tell about people too, and this is the best way I can express myself :) I am crafting a future I can be proud of. </span>
-          </p>
+          <article>
+            <slot />
+          </article>
         </div>
       </main>
 		</div>
@@ -65,6 +65,9 @@ import Layout from "../../layouts/Layout.astro";
   }
   .cover-img {
     background-color: var(--primary-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 450px;
     min-width: 450px;
     height: 700px;
@@ -87,15 +90,10 @@ import Layout from "../../layouts/Layout.astro";
     font-weight: 500;
     margin-bottom: 1rem;
   }
-  p {
+  article {
     font-family: 'IBM Plex Serif', sans-serif;
     font-size: 1.25rem;
     line-height: 2.5rem;
-  }
-  p > span {
-    margin-bottom: 2rem;
-    display: block;
-    font-family: 'IBM Plex Serif', sans-serif;
   }
 
   /* ----------
@@ -184,12 +182,9 @@ import Layout from "../../layouts/Layout.astro";
       top: 0.4rem;
       right: 0.4rem;
     }
-    p {
+    article p {
       font-size: 1.1rem;
       line-height: 2rem;
-    }
-    p > span {
-      margin-bottom: 1.5rem;
     }
     h3 {
       margin-top: 0;

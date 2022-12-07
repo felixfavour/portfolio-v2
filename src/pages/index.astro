@@ -2,6 +2,9 @@
 import StoryCard from '../components/StoryCard.astro';
 import BookCard from '../components/BookCard.astro';
 import Layout from '../layouts/Layout.astro';
+
+let books = await Astro.glob('../pages/books/*.md');
+books = books.sort((a, b) => a.frontmatter.yearRead - b.frontmatter.yearRead).slice(0, 3)
 ---
 
 <Layout title="Home">
@@ -34,9 +37,7 @@ import Layout from '../layouts/Layout.astro';
 					Books read this year
 				</h3>
 				<div class="list">
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
-					<BookCard book={{ title: 'Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All', propOne: '', propTwo: '' }} />
+					{books.map(book => <BookCard book={book} />)}
 				</div>
 				<a href="/books">See all books I’ve read</a>
 			</section>

@@ -99,6 +99,9 @@ const { title, description, img } = Astro.props;
 	a {
 		color: #000000;
 	}
+	svg, svg path {
+		fill: var(--primary-deep-dark);
+	}
 
 	/* DARK MODE */
 	body.dark {
@@ -119,7 +122,7 @@ const { title, description, img } = Astro.props;
 		color: var(--bg-light);
 	}
 	body.dark svg, body.dark svg path {
-		fill: var(--bg-light);
+		fill: var(--primary-deep-dark);
 	}
 	body.dark a {
 		border-color: var(--bg-light);
@@ -188,6 +191,11 @@ const { title, description, img } = Astro.props;
 	.logo:hover {
 		color: #000000;
 	}
+  article p {
+    font-family: 'IBM Plex Serif', sans-serif;
+    padding-bottom: 2rem;
+    display: block;
+  }
 
 	/* ----------
 	MEDIA QUERIES

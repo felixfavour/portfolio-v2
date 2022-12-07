@@ -75,13 +75,14 @@ import Logo from "./Logo.astro"
     width: 36px;
     display: grid;
     place-items: center;
-    border-radius: 50%;
+    border-radius: 12px;
     border: 0;
     background: transparent;
     padding: 0;
-  }
-  .clear-btn:hover {
     background: var(--primary);
+  }
+  .clear-btn:hover, .clear-btn:active {
+    background: var(--primary-dark);
   }
   .clear-btn svg {
     width: 24px;
