@@ -27,7 +27,7 @@ Now that we understand when motion should be used, we need to understand the two
 
 ## Transitions
 
-![Group 14.png](CSS%20and%20Motion%20%E2%80%94%20You%20Too%20Can%20Build%20Animations%20on%20T%20b3fd8deb96e4446da7234544c43d26e0/Group_14.png)
+![Anim1](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fanim-1.png?alt=media&token=c435cc30-97a8-4469-9321-ce222e9bb221)
 
 Transition is a motion between two keyframes; think of keyframes as a grouping of CSS styles, e.g. `color: red`, `padding: 20px` etc. The two keyframes of a transition would be individual styles for an element with similar CSS properties and different values — I know, that’s a lot to take in, but the diagram above helps to simplify.
 
@@ -56,7 +56,7 @@ In the above code snippet, the transition is triggered when the `enter` class is
 
 ## Animations
 
-![Group 23.png](CSS%20and%20Motion%20%E2%80%94%20You%20Too%20Can%20Build%20Animations%20on%20T%20b3fd8deb96e4446da7234544c43d26e0/Group_23.png)
+![Anim2](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fanim-2.png?alt=media&token=e4f35df1-a34c-48f0-a072-48910521f1ca)
 
 Transitions are perfect for demonstrating motion between two keyframes, but what happens when you work with more than two keyframes and need more flexibility in changing CSS properties? This is where animations build up on the shortcomings of CSS Transitions. CSS allows you to set animations with numerous keyframes in terms of percentages. Recall that a keyframe is a group of CSS styles.
 

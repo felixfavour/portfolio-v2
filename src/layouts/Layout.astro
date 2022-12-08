@@ -108,6 +108,11 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
 	body {
 		background: var(--bg-light);
 		padding-top: 100px;
+		border: 0px !important;
+	}
+	::selection {
+		color: #000000;
+		background: #DE8500;
 	}
 	a {
 		color: #000000;
@@ -233,6 +238,11 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
     color: var(--primary-dark);
     font-weight: 600;
   }
+	article img, article video {
+		width: 100%;
+		margin: 0.5rem 0;
+		border-radius: 1rem;
+	}
 	.astro-code {
 		padding: 1rem 2rem;
 		border-radius: 16px;
@@ -246,6 +256,8 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
 	code {
 		font-family: monospace;
 		color: var(--primary);
+	}
+	article body {
 	}
 
 	/* ----------
@@ -279,6 +291,9 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
 		}
 		article p > .major {
 			font-size: 1.4rem;
+		}
+		article img, article video {
+			border-radius: 0.5rem;
 		}
 		.astro-code {
 			padding: 0.5rem 1rem;
