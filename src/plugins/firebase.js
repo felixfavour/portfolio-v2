@@ -1,6 +1,7 @@
 import firebase from 'firebase/app'
+import { getAnalytics } from "firebase/analytics";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: 'AIzaSyAh4s9j6jNpLUeucbDSZrUKuWuJNTlZK1o',
   authDomain: 'favour-portfolio.firebaseapp.com',
   projectId: 'favour-portfolio',
@@ -10,4 +11,6 @@ const firebaseConfig = {
   measurementId: 'G-Y8YVRD558S'
 }
 
-firebase.initializeApp(firebaseConfig)
+export const app = firebase.initializeApp(firebaseConfig)
+
+getAnalytics(app)
