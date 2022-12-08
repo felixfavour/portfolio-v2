@@ -1,7 +1,7 @@
 ---
 type: book-review
 layout: ../../layouts/BookLayout.astro
-title: 'There was a country: A personal history of Biafra'
+title: 'There Was a Country: A Personal History of Biafra'
 excerpt: One chapter in, and I ask myself why it is my first time reading Chinua Achebe—the genius articulation of vocabulary, detail in storytelling and subtle humour left me in awe. I was simply excited to continue reading
 draft: false
 pages: 336
