@@ -210,11 +210,18 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
 		max-width: 850px;
 		margin-right: auto;
 		margin-left: auto;
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
 	}
   article p {
     font-family: 'IBM Plex Serif', sans-serif;
     padding-bottom: 2rem;
     display: block;
+  }
+  article p > .major {
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
 	article a {
     font-family: 'IBM Plex Serif', sans-serif;
@@ -262,6 +269,21 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
   @media screen and (max-width: 600px) {
 		body {
 			padding-top: 50px;
+		}
+		article {
+			font-size: 1.05rem;
+			line-height: 2.1rem;
+		}
+		article p {
+			padding-bottom: 1.5rem;
+		}
+		article p > .major {
+			font-size: 1.4rem;
+		}
+		.astro-code {
+			padding: 0.5rem 1rem;
+			border-radius: 8px;
+			margin-bottom: 1.5rem;
 		}
   }
 </style>
