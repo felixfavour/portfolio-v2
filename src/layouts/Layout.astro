@@ -71,6 +71,19 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
 	}
 </script>
 
+<!-- Google tag (gtag.js) -->
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=G-Y8YVRD558S"></script>
+<script is:inline>
+	if (!location.host.includes('localhost')) {
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-Y8YVRD558S');
+	}
+</script>
+
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Inter:wght@300;400;500;600&display=swap');
 
