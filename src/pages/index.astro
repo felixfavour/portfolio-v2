@@ -4,10 +4,10 @@ import BookCard from '../components/BookCard.astro';
 import Layout from '../layouts/Layout.astro';
 
 let books = await Astro.glob('../pages/books/*.md');
-books = books.sort((a, b) => a.frontmatter.yearRead - b.frontmatter.yearRead).slice(0, 3)
+books = books.sort((a, b) => b.frontmatter.yearRead - a.frontmatter.yearRead).slice(0, 3)
 
 let stories = await Astro.glob('../pages/stories/*.md');
-stories = stories.sort((a, b) => new Date(a.frontmatter.updatedAt).getTime() - new Date(b.frontmatter.updatedAt).getTime())
+stories = stories.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime())
 ---
 
 <Layout 

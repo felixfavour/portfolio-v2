@@ -3,7 +3,7 @@ import BookCard from '../../components/BookCard.astro';
 import Layout from '../../layouts/Layout.astro';
 
 let books = await Astro.glob('../books/*.md');
-books = books.sort((a, b) => a.frontmatter.year - b.frontmatter.year)
+books = books.sort((a, b) => b.frontmatter.year - a.frontmatter.year)
 
 const currentYear = new Date().getFullYear()
 

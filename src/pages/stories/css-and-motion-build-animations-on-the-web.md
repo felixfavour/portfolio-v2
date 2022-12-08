@@ -1,14 +1,14 @@
 ---
 type: story
 layout: ../../layouts/StoryLayout.astro
-title: CSS and Motion — You Too Can Build Animations on The Web
+title: CSS and Motion—You Too Can Build Animations on The Web
 excerpt: CSS and Motion is a short and effective guide sharing just enough fundamentals to help you start developing those buttery smooth animations on your web pages.
 draft: false
 pages: 0
 author: Favour Felix
 cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
 banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
-readTime: 5 mins
+readTime: 4 mins
 year: 2022
 date: September 26, 2022
 updatedAt: September 17, 2022 2:34 PM

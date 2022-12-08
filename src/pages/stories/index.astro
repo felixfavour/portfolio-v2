@@ -3,7 +3,7 @@ import StoryCard from '../../components/StoryCard.astro';
 import Layout from '../../layouts/Layout.astro';
 
 let stories = await Astro.glob('../stories/*.md');
-stories = stories.sort((a, b) => a.frontmatter.year - b.frontmatter.year)
+stories = stories.sort((a, b) => b.frontmatter.year - a.frontmatter.year)
 
 const currentYear = new Date().getFullYear()
 
