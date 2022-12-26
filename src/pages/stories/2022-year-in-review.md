@@ -115,7 +115,7 @@ I set a lot of goals for the new year. Obviously, you can’t be too close to Go
 
 Unfortunately, as committed as I might have sounded in the penultimate paragraphs, I did not hit my targets as much as I should have. I’m blaming it on the overtime hours I, intentionally, spent working for no just cause.
 
-I’m really hopeful for 2022. I will have to make a lot of sacrifices, a lot more than I made this year, and I am ready for them.
+I’m really hopeful for 2023. I will have to make a lot of sacrifices, a lot more than I made this year, and I am ready for them.
 
 ## Conclusion
 
