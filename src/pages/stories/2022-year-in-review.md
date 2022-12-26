@@ -15,22 +15,21 @@ updatedAt: December 26, 2022 12:01 AM
 ---
 
 Hello, I should have started this at the beginning of the year. But here I am starting on the 12th day of November. Thankfully, I take a lot of photos, and you know what they say, “pictures tell the whole story”. So give me a minute to take a look at my gallery.
-
+<section class="first">
 . . .
-
-Alright, so here’s what I found.
-
-2022 was mad fun.
-
+</section>
+Alright, so here’s what I found. <br /> Like previous years, 2022 was funny and challenging, but there's a lot of firsts.
+<section>
 . . .
+</section>
 
-Hello, again. It’s the 25th day of December, and I’ve been thinking: the beauty of a year-in-review article is captured in its informal tone, so I’d do that instead. Nope, I don’t procrastinate—I take my time.
+Hello, again. It’s the 25th day of December, and I’ve been thinking: the beauty of a year-in-review article is captured in its informal tone, so I’d do that instead.
 
 Even though I want to do this in a less formal way than my previous articles, I’d still give it some structure. That said, here’s 2022 in no particular order.
 
 ## Work
 
-Like any other person that loves what they do, I work hard, maybe too hard. I am a Software Engineer and a TikToker on weekends. Nah, I’m kidding. Just a Software Engineer for now. For context, a Software Engineer is anyone who writes code and attends meetings for money.
+Like any other person that loves what they do, I work hard, maybe too hard. I am a Software Engineer and a TikTok-er on weekends. Nah, I’m kidding. Just a Software Engineer for now. For context, a Software Engineer is anyone who writes code and attends meetings for money.
 
 ![My workspace while I was in the UAE.](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-work.webp?alt=media&token=9fcaed0e-2ecf-4de0-945f-64f3674d08ca)
 
@@ -42,19 +41,19 @@ Some other cool stuff I worked on at work was [Kinly](http://bekinly.com), [Bras
 
 ## School
 
-TL;DR — I got a BSc. Information Technology from Middlesex University, London (Nope, this one is not remote. Studied in the Dubai campus, life and direct)
+**TL;DR** - I got a BSc. Information Technology from Middlesex University, London (Nope, this one is not remote. I was blessed to study in the Dubai campus, life and direct)
 
 ![Me with some of my classmates in school](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-school.webp?alt=media&token=bad31e67-1629-4fa1-9abc-8a191977ab5f)
 
 Travelled to the UAE to complete my university education and took the risk of doing it while working. It was a struggle, so damn painful, really, really painful. God really helped me go through that ‘cos it felt like I was going under.
 
-It was particularly painful because I didn’t want to go through school, I wanted to pay attention to it and actually excel academically, and I paid the price. Getting good sleep felt like a luxury, I spent nights, mornings and afternoons in the study room, working and studying.
+It was particularly painful because I didn’t just want to go through school, I wanted to give it a lot of my attention and excel academically, and I paid the price. Getting good sleep felt like a luxury, and I spent nights, mornings and afternoons in the study room, working and studying.
 
 Thankfully, all those sleepless nights paid off, and I graduated with a First class. My dad can rest now, me too, lol.
 
 ## Entrepreneurship
 
-I’ve been writing code for almost five years now, and I wanted to do more. So, my silly response was to try entrepreneurship and boy, it’s been really interesting than anything I have experienced in my profession, and I would explain why.
+I’ve been writing code for almost five years now, and I wanted to do more. So, my silly response was to try entrepreneurship and boy, it’s been interesting than anything I have experienced in my profession, and I would explain why.
 
 ![Me at a Tech Mixer in Downtown Dubai.](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-entrepreneurship.webp?alt=media&token=d325cdda-d414-4566-80d9-754b1f4a0ef9)
 
@@ -62,9 +61,9 @@ I started my entrepreneurship journey with [Robin](https://robinapp.co), sort of
 
 After Robin, I gained the confidence to start [Revaise](https://revaise.com). The process that led to Revaise’s birth is a simple one, actually. I saw a problem with no existing solution, and I invited a friend to help me build one. This is me paraphrasing—the full story is [here](https://www.linkedin.com/posts/favourfelix_remotework-peerreview-productivity-activity-6998936201453821952-gARa?utm_source=share&utm_medium=member_desktop).
 
-The sail on this entrepreneur-ship has been an interesting journey for me because I get to do a lot of things, not just write code. I get to do sales and marketing and even make design and product decisions when the need arises.
+The sail on this entrepreneur-ship has been an interesting journey for me because I get to do a lot of things, not just write code. I get to make design and product decisions, and even do a little sales and marketing when the need arises.
 
-This is not to say being an entrepreneur has been easy, not at all. I just love that I can’t predict what’s ahead.
+This is not to say being an entrepreneur has been all fun and easy, not at all. I just love that I can’t predict what’s ahead.
 
 ## Creative Writing
 
@@ -74,7 +73,7 @@ In 2022, I took writing seriously again. Sometime from 2018 to 2020, I used to w
 
 This year, I resumed and went harder. This time, I’m taking a rather multi-faceted approach with a little emphasis on technical writing. I don’t earn money from writing just yet; I’m not keen on it. Like every other skill in life, I believe when you give out value you’d be rewarded. I’m learning mastery for now.
 
-I know mastery is difficult. I have a few people around me and on the internet to help me achieve that. For now, I’d keep on writing quality content and get as much feedback as I can where necessary.
+I know mastering creative writing is difficult. I have a few people around me, and on the internet to help me achieve that. For now, I’d keep on writing quality content and get as much feedback as I can where necessary.
 
 A major feat I achieved in this category this year was being accepted as a contributor at FreeCodeCamp and becoming a [2022 Top Contributor](https://www.freecodecamp.org/news/freecodecamp-2022-top-contributors/). For me, that’s enough fuel for the new year.
 
@@ -82,7 +81,7 @@ A major feat I achieved in this category this year was being accepted as a contr
 
 To start with, I did a couple of mentorships and guidance this year — *funny ‘cos na all of us dey grow together*, but if you trust me, I should trust me too, right?
 
-I also spoke publicly in two places this year, the first with over 7,000 people in the audience and the other with about 500, interestingly, both events occurred in a month. It was an honour for me to speak to people in such a large volume, and I hope to do more of it in the new year.
+I also spoke publicly in two places this year, the first with over 7,000 people in audience and the other with about 500, interestingly, both events occurred in a month. It was an honour for me to speak to people in such a large volume, and I hope to do more of it in the new year.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/CQWh7XOo9Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -122,8 +121,6 @@ I’m really hopeful for 2022. I will have to make a lot of sacrifices, a lot mo
 
 Well, this was easier than I thought. An article takes me a minimum of three weeks for compilation and research, but I compiled this in a night. I hope this teaches you to always go the informal route and speak from the heart.
 
-If you sincerely read this far, you probably like me so much, or you’re just an *amebo*, which is fine too.
-
-It could also mean I am a really good writer; whichever it is, feel free to fuel my ego via email. I’d need it for possible imposter syndrome attacks in the new year.
+If you sincerely read this far, you probably like me so much, or I am a really good writer; whichever it is, feel free to fuel my ego via email. I’d need it for possible imposter syndrome attacks in the new year.
 
 Thank you so much!

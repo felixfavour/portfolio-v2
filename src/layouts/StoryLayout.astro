@@ -18,7 +18,7 @@ const {frontmatter} = Astro.props;
         {frontmatter.title}
       </h2>
       <div class="row">
-        <div>November 11, 2022</div>
+        <div>{ frontmatter.date }</div>
         <div>Read for <span class="bold">{frontmatter.readTime}</span></div>
       </div>
       <main>
