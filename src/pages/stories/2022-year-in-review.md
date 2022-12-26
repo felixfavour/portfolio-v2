@@ -11,7 +11,7 @@ banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.co
 readTime: 7 mins
 year: 2022
 date: December 26, 2022
-updatedAt: December 26, 2022 12:01 AM
+updatedAt: December 26, 2022 09:01 PM
 ---
 
 Hello, I should have started this at the beginning of the year. But here I am starting on the 12th day of November. Thankfully, I take a lot of photos, and you know what they say, “pictures tell the whole story”. So give me a minute to take a look at my gallery.
@@ -37,11 +37,11 @@ I did a lot of impactful stuff at work this year, I worked with some diverse tea
 
 What was the impactful stuff I worked on? I did a lot, but the one I am most proud of is [Robin](https://robinapp.co?ref=favourfelix.com). Robin helps you build apps like Whatsapp or Telegram in about 5 minutes. Robin is growing and achieving numbers, and I am so proud that I am one of the reasons it exists in the first place. 
 
-Some other cool stuff I worked on at work was [Kinly](http://bekinly.com), [Brassica](http://brassicafin.com) and [Tendar](http://tendar.co).
+Some other cool stuff I worked on at work were [Kinly](http://bekinly.com), [Brassica](http://brassicafin.com) and [Tendar](http://tendar.co).
 
 ## School
 
-**TL;DR** - I got a BSc. Information Technology from Middlesex University, London (Nope, this one is not remote. I was blessed to study in the Dubai campus, life and direct)
+**TL;DR** - I got a BSc. Information Technology from Middlesex University, London (Nope, this one is not remote. I was blessed to study in the Dubai campus, live and direct)
 
 ![Me with some of my classmates in school](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-school.webp?alt=media&token=bad31e67-1629-4fa1-9abc-8a191977ab5f)
 
