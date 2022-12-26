@@ -7,7 +7,7 @@ let books = await Astro.glob('../pages/books/*.md');
 books = books.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime()).slice(0, 3)
 
 let stories = await Astro.glob('../pages/stories/*.md');
-stories = stories.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime())
+stories = stories.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime()).slice(0, 3)
 ---
 
 <Layout 

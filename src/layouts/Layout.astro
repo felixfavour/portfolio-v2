@@ -236,6 +236,9 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
     padding-bottom: 2rem;
     display: block;
   }
+	article em {
+    font-family: 'IBM Plex Serif', sans-serif;
+  }
   article p > .major {
     font-size: 1.5rem;
     line-height: 3rem;
@@ -250,7 +253,7 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } = 
     color: var(--primary-dark);
     font-weight: 600;
   }
-	article img, article video {
+	article img, article video, article iframe {
 		width: 100%;
 		margin: 0.5rem 0;
 		border-radius: 1rem;
