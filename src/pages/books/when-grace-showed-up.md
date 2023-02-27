@@ -2,7 +2,7 @@
 type: book-review
 layout: ../../layouts/BookLayout.astro
 title: 'When Grace Showed Up'
-excerpt: 
+excerpt: I've always known to be nice to people, but the miracles and experiences shared in this book because of the kindness of two people was resounding. The lessons I learnt from this book have not left me until now, and I hope they stay rooted.
 draft: false
 pages: 240
 author: Tich and Joan Smith
@@ -14,4 +14,10 @@ date: November 5, 2020
 updatedAt: November 5, 2020 2:34 PM
 ---
 
-Book Review still in progress
+I got this book as a gift from Sunday School, and it took me months, if not a few years, to eventually open it up.
+
+I am glad I eventually opened it and learnt a couple of things. Amidst all I might have learnt from this book, I'll never forget how powerful and therapeutic an act of kindness can be.
+
+I've always known to be nice to people, but the miracles and experiences shared in this book because of the kindness of two people was resounding.
+
+The lessons I learnt from this book have not left me until now, and I hope they stay rooted.
