@@ -2,7 +2,7 @@
 type: book-review
 layout: ../../layouts/BookLayout.astro
 title: 'Mere Christianity'
-excerpt: 'I am a very logical person until I have to be a Christian, but Clive Staples Lewis helps me understand that I can be both in his book. There is a scientific way to think about Christianity, and even though it's not finite, that's fine. I'd instead find comfort in my ignorance than make inexplicable speculations.'
+excerpt: I am a very logical person until I have to be a Christian, but Clive Staples Lewis helps me understand that I can be both in his book. There is a scientific way to think about Christianity, and even though it's not finite, that's fine. I'd instead find comfort in my ignorance than make inexplicable speculations.
 draft: false
 pages: 256
 author: C.S Lewis
