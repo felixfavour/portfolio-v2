@@ -4,7 +4,7 @@ const {frontmatter} = Astro.props;
 ---
 
 <Layout 
-	title={`${frontmatter.title} - Book Review by Favour Felix`}
+	title={`${frontmatter.title} by ${frontmatter.author} - Book Review`}
 	description={frontmatter.excerpt}
   img={frontmatter.banner}
   type="article"
