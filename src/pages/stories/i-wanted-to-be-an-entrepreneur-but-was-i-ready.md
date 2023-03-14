@@ -62,10 +62,10 @@ The lesson learnt from here was to create a document for all their questions and
 
 It also made me aware that I needed to understand my business market more. While I can’t say I fully comprehend it now, I have certainly made progress in the past six months and am looking to continue growing at an even faster rate moving forward (aiming for 10x growth).
 
-## In Conclusion
+## In conclusion
 
 As a budding entrepreneur, I’ve learned that experience is truly the best teacher—and boy, have the past six months been one heck of a crash course!
 
-Most workdays for me have been the weekend, and I’m grateful for our amazing users and the outpouring of support from our community. Here’s to the next six months—may they be just as enlightening, but with a few more leisurely Saturdays thrown in!
+Most workdays for me have been the weekend, and I’m grateful for our amazing users and the outpouring of support from our community that make it worthwhile. Here’s to the next six months—may they be just as enlightening, but with a few more leisurely Saturdays thrown in!
 
 Want to see what we've been working on with Revaise? Get access to our private beta on [revaise.com](https://revaise.com?ref=favourfelix). Got a comment? Shoot me an [email](mailto:hello@favourfelix.com).
