@@ -26,7 +26,7 @@ For the sake of brevity, I cannot share all of my experiences in this article, e
 
 Very early on with Revaise, during the design phase, we initiated our own form of advertising. We spread the gospel of Revaise on LinkedIn, Product Hunt, and to a few people we knew. Our goal was simply to create some buzz and we didn’t expect a significant response. At most, we hoped to improve our SEO and search engine rankings.
 
-As you can probably tell, contrary to our beliefs, the outcome of our small and zero-cost advertising campaign was quite significant. We received loads of emails from a Venture Capitalist (VC), an accelerator, and a few individuals interested in partnering with us. (Maybe not loads of emails, about five, but at the time, this was a huge win)
+As you can probably tell, contrary to our beliefs, the outcome of our small and zero-cost advertising campaign was quite significant. We received loads of emails from a Venture Capitalist (VC) firm, an accelerator, and a few individuals interested in partnering with us. (Maybe not loads of emails, about five, but at the time, this was a huge win)
 
 At this point, we were not looking to raise funds. We decided to bootstrap until there was an apparent need to get capital, so we made our intentions clear to the necessary parties at the beginning. Although, we were fine with keeping the relationship until the time was right.
 
