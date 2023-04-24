@@ -1,145 +1,166 @@
 ---
-import StoryCard from '../components/StoryCard.astro';
-import BookCard from '../components/BookCard.astro';
-import Layout from '../layouts/Layout.astro';
+import StoryCard from "../components/StoryCard.astro";
+import BookCard from "../components/BookCard.astro";
+import Layout from "../layouts/Layout.astro";
 
-let books = await Astro.glob('../pages/books/*.md');
-books = books.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime()).slice(0, 3)
+let books = await Astro.glob("../pages/books/*.md");
+books = books
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.updatedAt).getTime() -
+      new Date(a.frontmatter.updatedAt).getTime()
+  )
+  .slice(0, 3);
 
-let stories = await Astro.glob('../pages/stories/*.md');
-stories = stories.sort((a, b) => new Date(b.frontmatter.updatedAt).getTime() - new Date(a.frontmatter.updatedAt).getTime()).slice(0, 3)
+let stories = await Astro.glob("../pages/stories/*.md");
+stories = stories
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.updatedAt).getTime() -
+      new Date(a.frontmatter.updatedAt).getTime()
+  )
+  .slice(0, 3);
 ---
 
-<Layout 
-	title="Favour Felix — Entrepreneur, Software Engineer" 
-	description="I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen."
+<Layout
+  title="Favour Felix — Entrepreneur, Software Engineer"
+  description="I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen."
 >
-	<div class="section">
-		<div class="inner">
-			<div class="texts">
-				<h1>I am <span class="emphatic">crafting</span> a future I can be <span class="emphatic">proud</span> of,</h1>
-				<h2>and I honestly can’t keep it to myself.</h2>
-				<p>
-					I am currently entrepreneur-ing at <a target="_blank" href="https://revaise.com" class="bold">Revaise</a> (we are revolutionising peer reviews in the workplace), and being the best software engineer I can be at  <a target="_blank" href="https://acumen.digital" class="bold">Acumen</a>.
-				</p>
-			</div>
+  <div class="section">
+    <div class="inner">
+      <div class="texts">
+        <h1>
+          I am <span class="emphatic">crafting</span> a future I can be <span
+            class="emphatic">proud</span
+          > of,
+        </h1>
+        <h2>and I honestly can’t keep it to myself.</h2>
+        <p>
+          I am currently entrepreneur-ing at <a
+            target="_blank"
+            href="https://revaise.com"
+            class="bold">Revaise</a
+          > (we are revolutionising peer reviews in the workplace), and I lead the
+          front-end engineering team at <a
+            target="_blank"
+            href="https://acumen.digital"
+            class="bold">Acumen</a
+          >.
+        </p>
+      </div>
 
-			<!-- MOST RECENT WRITING -->
-			<section>
-				<h3 class="mini-heading">
-					Most recent writing
-				</h3>
-				<div class="list">
-					{stories.map(story => <StoryCard story={story} />)}
-				</div>
-				<a href="/stories">See everything I’ve written</a>
-			</section>
+      <!-- MOST RECENT WRITING -->
+      <section>
+        <h3 class="mini-heading">Most recent writing</h3>
+        <div class="list">
+          {stories.map((story) => <StoryCard story={story} />)}
+        </div>
+        <a href="/stories">See everything I’ve written</a>
+      </section>
 
-			<!-- MOST RECENT WRITING -->
-			<section>
-				<h3 class="mini-heading">
-					Some books read this year
-				</h3>
-				<div class="list">
-					{books.map(book => <BookCard book={book} />)}
-				</div>
-				<a href="/books">See all books I’ve read</a>
-			</section>
-		</div>
-	</div>
+      <!-- MOST RECENT WRITING -->
+      <section>
+        <h3 class="mini-heading">Some books read this year</h3>
+        <div class="list">
+          {books.map((book) => <BookCard book={book} />)}
+        </div>
+        <a href="/books">See all books I’ve read</a>
+      </section>
+    </div>
+  </div>
 </Layout>
 
 <style>
-	.texts {
-		padding: 5rem 0;
-		padding-top: 7rem;
-	}
-	h1 {
-		font-weight: 500;
-		font-size: 3.5rem;
-		line-height: 4.1rem;
-	}
-	h2 {
-		font-weight: 400;
-		font-size: 3rem;
-		line-height: 4rem;
-		padding-top: 0.6rem;
-	}
-	p {
-		font-weight: 300;
-		font-size: 2rem;
-		line-height: 3rem;
-		margin-top: 2rem;
-	}
-	p a {
-		text-decoration: none;
-		border-bottom: 1px solid #000000;
-	}
+  .texts {
+    padding: 5rem 0;
+    padding-top: 7rem;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-top: 0.6rem;
+  }
+  p {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  p a {
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+  }
 
-	section {
-		margin-bottom: 5rem;
-	}
-	section a {
-		font-size: 1.2rem;
-		border-bottom: 1px solid #000000;
-		text-decoration: none;
-	}
-	.list {
-		margin-bottom: 2rem;
-	}
-	h3 {
-		font-size: 1.1rem;
-		font-weight: 600;
-		margin-bottom: 1rem;
-		color: var(--primary-dark);
-	}
+  section {
+    margin-bottom: 5rem;
+  }
+  section a {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+  }
+  .list {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
 
-	/* ----------
+  /* ----------
 	MEDIA QUERIES
 	------------*/
-	@media screen and (max-width: 1500px) {
-	}
+  @media screen and (max-width: 1500px) {
+  }
 
-	@media screen and (max-width: 1100px) {
-	}
+  @media screen and (max-width: 1100px) {
+  }
 
-	@media screen and (max-width: 920px) {
-		h1 {
-			font-size: 4.25rem;
-			line-height: 5.2rem;
-			font-weight: 600;
-		}
-		h2 {
-			font-size: 3rem;
-			line-height: 4.2rem;
-		}
-		p {
-			font-size: 1.8rem;
-			line-height: 2.9rem;
-			margin-top: 1.4rem;
-		}
-	}
+  @media screen and (max-width: 920px) {
+    h1 {
+      font-size: 4.25rem;
+      line-height: 5.2rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      margin-top: 1.4rem;
+    }
+  }
 
-	@media screen and (max-width: 500px) {
-		.texts {
-			padding-top: 15%;
-		}
-		h1 {
-			font-size: 3.25rem;
-			line-height: 4.2rem;
-		}
-		h2 {
-			font-size: 2rem;
-			line-height: 3rem;
-			padding-top: 1.2rem;
-		}
-		p {
+  @media screen and (max-width: 600px) {
+    .texts {
+      padding-top: 15%;
+    }
+    h1 {
+      font-size: 3.25rem;
+      line-height: 3.6rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      padding-top: 0.8rem;
+    }
+    p {
       font-size: 1.2rem;
       line-height: 2rem;
-			margin-top: 2rem;
-		}
-		h3 {
-			font-size: 1.5rem;
-		}
-	}
+      margin-top: 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 </style>
