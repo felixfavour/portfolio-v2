@@ -91,6 +91,12 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     <Navbar />
     <slot />
     <Footer />
+    <div class="front-row-ctn section">
+      <div class="inner">
+        <Subscribe />
+        <button class="front-row-btn"> Front-row Seat 👋🏿</button>
+      </div>
+    </div>
     <script></script>
   </body>
 </html>
@@ -128,6 +134,18 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     lightIcon?.classList.remove("hidden")
     darkIcon?.classList.add("hidden")
   }
+
+  // FRONT ROW SEAT MODAL TOGGLE
+  const frontRowButton = document.querySelector(".front-row-btn")
+  const frontRowForm = document.querySelector("#mc_embed_signup")
+
+  frontRowButton?.addEventListener("click", () => {
+    if (frontRowForm?.classList.contains("come-up-1")) {
+      frontRowForm?.classList.remove("come-up-1")
+    } else {
+      frontRowForm?.classList.add("come-up-1")
+    }
+  })
 </script>
 
 <!-- Google tag (gtag.js) -->
@@ -354,6 +372,32 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
   article body {
   }
 
+  /* MAILCHIMP FORM */
+  .front-row-ctn {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .front-row-ctn .inner > button {
+    background: var(--primary);
+    outline: none;
+    border: none;
+    height: 50px;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    font-weight: 600;
+  }
+  #mc_embed_signup.come-up-1 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
   /* ----------
 	MEDIA QUERIES
 	------------*/
@@ -394,6 +438,14 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
       padding: 0.5rem 1rem;
       border-radius: 8px;
       margin-bottom: 1.5rem;
+    }
+    .front-row-ctn .inner > button {
+      height: 40px;
+      font-size: 0.9rem;
+      padding: 0 1.3rem;
+      border-top-right-radius: 14px;
+      border-top-left-radius: 14px;
+      font-weight: 600;
     }
   }
 </style>
