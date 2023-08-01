@@ -1,26 +1,26 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
 
-const defaultTitle = "Favour Felix — Entrepreneur, Software Engineer";
+const defaultTitle = "Favour Felix — Entrepreneur, Software Engineer"
 const defaultDescription =
-  "I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen.";
+  "I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen."
 const defaultImage =
-  "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/og-home.png?alt=media&token=73ed34b0-0fc4-47c7-b334-e810dbdab520";
-const defaultType = "website";
+  "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/og-home.png?alt=media&token=73ed34b0-0fc4-47c7-b334-e810dbdab520"
+const defaultType = "website"
 
 export interface Props {
-  title: string;
-  description: string;
-  img: string;
-  type: string;
-  readTime: string;
-  publishedDate: string;
-  lastUpdated: string;
+  title: string
+  description: string
+  img: string
+  type: string
+  readTime: string
+  publishedDate: string
+  lastUpdated: string
 }
 
 const { title, description, img, type, readTime, publishedDate, lastUpdated } =
-  Astro.props;
+  Astro.props
 ---
 
 <!DOCTYPE html>
@@ -73,6 +73,19 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     <meta name="twitter:site" content="" />
     <meta name="twitter:creator" content="" />
     <title>{title}</title>
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        ;(m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p)
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/ea6e64660e058c4dc6859a3e3/7ebdb5fc96867ee181201408e.js"
+      )
+    </script>
   </head>
   <body>
     <Navbar />
@@ -83,37 +96,37 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
 </html>
 
 <script>
-  const body = document.querySelector("body");
-  const lightIcon = document.querySelector("#light-svg");
-  const darkIcon = document.querySelector("#dark-svg");
+  const body = document.querySelector("body")
+  const lightIcon = document.querySelector("#light-svg")
+  const darkIcon = document.querySelector("#dark-svg")
 
   // DARK MODE LOGIC
   if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    body?.classList.add("dark");
-    lightIcon?.classList.remove("hidden");
-    darkIcon?.classList.add("hidden");
+    body?.classList.add("dark")
+    lightIcon?.classList.remove("hidden")
+    darkIcon?.classList.add("hidden")
   }
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (event) => {
-      const newColorScheme = event.matches ? "dark" : "light";
+      const newColorScheme = event.matches ? "dark" : "light"
       if (newColorScheme === "dark") {
-        body?.classList.add("dark");
-        lightIcon?.classList.remove("hidden");
-        darkIcon?.classList.add("hidden");
+        body?.classList.add("dark")
+        lightIcon?.classList.remove("hidden")
+        darkIcon?.classList.add("hidden")
       } else {
-        body?.classList.remove("dark");
-        lightIcon?.classList.add("hidden");
-        darkIcon?.classList.remove("hidden");
+        body?.classList.remove("dark")
+        lightIcon?.classList.add("hidden")
+        darkIcon?.classList.remove("hidden")
       }
-    });
+    })
   if (localStorage.getItem("theme") === "dark") {
-    body?.classList.add("dark");
-    lightIcon?.classList.remove("hidden");
-    darkIcon?.classList.add("hidden");
+    body?.classList.add("dark")
+    lightIcon?.classList.remove("hidden")
+    darkIcon?.classList.add("hidden")
   }
 </script>
 
@@ -125,12 +138,12 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
 ></script>
 <script is:inline>
   if (!location.host.includes("localhost")) {
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || []
     function gtag() {
-      dataLayer.push(arguments);
+      dataLayer.push(arguments)
     }
-    gtag("js", new Date());
-    gtag("config", "G-Y8YVRD558S");
+    gtag("js", new Date())
+    gtag("config", "G-Y8YVRD558S")
   }
 </script>
 
