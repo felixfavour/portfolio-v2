@@ -82,6 +82,10 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     <div class="front-row-ctn section">
       <div class="inner">
         <Subscribe />
+      </div>
+    </div>
+    <div class="front-row-btn-ctn section">
+      <div class="inner">
         <button class="front-row-btn"> Front-row Seat 👋🏿</button>
       </div>
     </div>
@@ -125,7 +129,7 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
 
   // FRONT ROW SEAT MODAL TOGGLE
   const frontRowButton = document.querySelector(".front-row-btn")
-  const frontRowForm = document.querySelector("#mc_embed_signup")
+  const frontRowForm = document.querySelector(".front-row-ctn")
 
   frontRowButton?.addEventListener("click", () => {
     if (frontRowForm?.classList.contains("come-up-1")) {
@@ -361,7 +365,8 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
   }
 
   /* MAILCHIMP FORM */
-  .front-row-ctn {
+  .front-row-ctn,
+  .front-row-btn-ctn {
     text-align: right;
     position: fixed;
     width: 100%;
@@ -369,7 +374,14 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     left: 0;
     bottom: 0;
   }
-  .front-row-ctn .inner > button {
+  .front-row-ctn {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
+    transform-origin: bottom right;
+    transition: 0.3s;
+  }
+  .front-row-btn-ctn .inner > button {
     background: var(--primary);
     outline: none;
     border: none;
@@ -380,7 +392,7 @@ const { title, description, img, type, readTime, publishedDate, lastUpdated } =
     border-top-left-radius: 14px;
     font-weight: 600;
   }
-  #mc_embed_signup.come-up-1 {
+  .front-row-ctn.come-up-1 {
     visibility: visible;
     opacity: 1;
     transform: translateY(0) scale(1);
