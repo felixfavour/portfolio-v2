@@ -6,8 +6,8 @@ excerpt: Think of a resource that empowers you to become a great employee, an ef
 draft: false
 pages: 0
 author: Favour Felix
-cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F10x-engineer-sm.jpg?alt=media&token=565bedbe-d510-41bb-8ff5-b7a2a394771e"
-banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F10x-engineer-og.webp?alt=media&token=11b43595-e396-4d46-8dfc-30fede79cb32"
+cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F10x-engineer.webp?alt=media&token=0c4706cf-c80b-4ed3-8fe3-a7539a3f89d5"
+banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F10x-engineer.webp?alt=media&token=0c4706cf-c80b-4ed3-8fe3-a7539a3f89d5"
 readTime: 5 mins
 year: 2023
 date: August 16, 2023
