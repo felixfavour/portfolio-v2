@@ -14,7 +14,7 @@ date: August 16, 2023
 updatedAt: August 16, 2023 11:21 PM
 ---
 
-I concluded reading a book titled *[Software Engineering: The Soft Parts](https://addyosmani.com/blog/software-engineering-soft-parts)* about a month ago. Addy Osmani wrote the book — Think of a resource that empowers you to become a great employee, an efficient leader and a high-performing engineer—that is precisely what the book seeks to achieve.
+I concluded reading a book titled *[Software Engineering: The Soft Parts](https://addyosmani.com/blog/software-engineering-soft-parts)* about a month ago. Addy Osmani wrote the book — Think of a resource that empowers you to become a great employee, an efficient leader and a high-performing engineer—that is precisely what the book seeks to achieve.
 
 While I read, I wrote. I also pondered some of my past experiences; some of the information here was my reality, and others still needed to be. Sharing this might be helpful to a ton of people. Hence, here are some learnings I gathered from my most recent reading:
 <br>
