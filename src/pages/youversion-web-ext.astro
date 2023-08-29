@@ -1,0 +1,143 @@
+---
+import StoryCard from "../components/StoryCard.astro"
+import BookCard from "../components/BookCard.astro"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout
+  title="Youversion Web Extension - Filter Notes & Bookmarks"
+  description="Web Browser extension for YouVersion Bible App, to help make notes, bookmarks, and highlights more filterable among others."
+  img="https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/yv-search-chrome.png?alt=media&token=c1d6d5d1-3a9b-4626-a649-68c9d126e039"
+  publishedDate="2023-08-29T13:29:27.155Z"
+  lastUpdated="2023-08-29T13:29:27.155Z"
+>
+  <div class="section">
+    <div class="inner">
+      <div class="texts">
+        <div class="flex">
+          <img src="/yv-search-logo.png" alt="" />
+        </div>
+        <h1>Youversion Search</h1>
+        <h2 class="bold">Web Browser Extension</h2>
+        <p>
+          Web Browser extension for YouVersion Bible App, to help make notes,
+          bookmarks, and highlights more filterable among others.
+        </p>
+        <a
+          href="https://chrome.google.com/webstore/detail/youversion-web/ccdlfnlcdkjjcjdiidgghcgeadghfbdp"
+          class="primary-btn"
+        >
+          Get on Chrome Webstore</a
+        >
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .texts {
+    padding: 3rem 0;
+    padding-top: 5rem;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    padding-top: 3rem;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-top: 0.5rem;
+    color: var(--primary);
+  }
+  p {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  p a {
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+  }
+
+  section {
+    margin-bottom: 5rem;
+  }
+  section a {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+  }
+  .list {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+  .primary-btn {
+    font-size: 1.3rem;
+    margin-top: 5%;
+    width: auto;
+    padding: 0 5%;
+    max-width: 400px;
+  }
+
+  /* ----------
+	MEDIA QUERIES
+	------------*/
+  @media screen and (max-width: 1500px) {
+  }
+
+  @media screen and (max-width: 1100px) {
+  }
+
+  @media screen and (max-width: 920px) {
+    /* h1 {
+      font-size: 4.25rem;
+      line-height: 5.2rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      margin-top: 1.4rem;
+    } */
+  }
+
+  @media screen and (max-width: 600px) {
+    .texts {
+      padding-top: 15%;
+    }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 3rem;
+    }
+    h2 {
+      font-size: 1rem;
+      line-height: 1.8rem;
+      padding-top: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-top: 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    .primary-btn {
+      font-size: 1rem;
+      height: 40px;
+    }
+  }
+</style>
