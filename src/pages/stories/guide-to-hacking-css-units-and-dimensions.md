@@ -3,26 +3,27 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: Your Guide to Hacking CSS Units and Dimensions—One Size Could Fit All
 excerpt: Having worked with CSS for a really long time, I have formed various rules of thumb while working with CSS units and recycled them along the way to streamline my styling process.
+tag: technical
 draft: false
 pages: 0
 author: Favour Felix
-cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fhs-banner.webp?alt=media&token=b759792c-ff07-4fd7-ac65-54747b17484b'
-banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fhs-banner.webp?alt=media&token=b759792c-ff07-4fd7-ac65-54747b17484b'
+cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fhs-banner.webp?alt=media&token=b759792c-ff07-4fd7-ac65-54747b17484b"
+banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fhs-banner.webp?alt=media&token=b759792c-ff07-4fd7-ac65-54747b17484b"
 readTime: 4 mins
 year: 2022
 date: September 12, 2022
 updatedAt: September 12, 2022 2:32 PM
 ---
 
-Amidst the `px`, `em`, percent, and so much more units made available with CSS, confusions on the perfect units for dimensioning your HTML elements could arise. Using a unit that seems to work at first glance might trick you into believing that all is well. Sometimes, our choice of units when styling could backfire when our webpage is viewed on another screen. Situations like this make us fall back to media queries to save the day, because why not? How would I expect one CSS dimension to fit several viewports? With a better understanding of CSS Units, one size could fit all viewports. 
+Amidst the `px`, `em`, percent, and so much more units made available with CSS, confusions on the perfect units for dimensioning your HTML elements could arise. Using a unit that seems to work at first glance might trick you into believing that all is well. Sometimes, our choice of units when styling could backfire when our webpage is viewed on another screen. Situations like this make us fall back to media queries to save the day, because why not? How would I expect one CSS dimension to fit several viewports? With a better understanding of CSS Units, one size could fit all viewports.
 
 Having worked with CSS for a really long time, I have formed various rules of thumb while working with CSS units and recycled them along the way to streamline my styling process. I believe some of these rules could help you very much as they did me.
 
 ## Rule 1: Use relative units instead of absolute units as much as possible
 
-CSS [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) dimensions can be represented in two units; the relative and absolute units. The major difference between them is that the absolute unit remains the same size on different screen types and viewports. The relative unit, on the other hand, has a size relative to some set constraints — these constraints could be the parent element font size or the current viewport size. 
+CSS [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) dimensions can be represented in two units; the relative and absolute units. The major difference between them is that the absolute unit remains the same size on different screen types and viewports. The relative unit, on the other hand, has a size relative to some set constraints — these constraints could be the parent element font size or the current viewport size.
 
-Relative units are preferable as they could help to properly size elements and fonts relative to your screen’s viewport and your HTML root element. If implemented carefully, it could drastically reduce time spent styling the same elements using media queries. A good place to start is replacing `px` for `rem` on your element’s widths, heights, font sizes and more. 
+Relative units are preferable as they could help to properly size elements and fonts relative to your screen’s viewport and your HTML root element. If implemented carefully, it could drastically reduce time spent styling the same elements using media queries. A good place to start is replacing `px` for `rem` on your element’s widths, heights, font sizes and more.
 
 Some examples of absolute units are `cm`, `mm`, `px`, `pt`, and a few examples of relative units are `em`, `rem`, `vw`, `vh`.
 

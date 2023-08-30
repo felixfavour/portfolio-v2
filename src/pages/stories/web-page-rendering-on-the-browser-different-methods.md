@@ -3,6 +3,7 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: How Web Pages Get Rendered on the Browser
 excerpt: Today, all over the world, computers and networks are getting faster. This is good for web development and user experience in general. And the possibilities of what people can achieve have taken a massive leap forward.But although growth is evident in many places, others are left behind in this sprint. The big question is how do we level the web experience given this digital divide and make the web more accessible to people with less efficient computers and networks?
+tag: technical
 draft: false
 pages: 0
 author: Favour Felix

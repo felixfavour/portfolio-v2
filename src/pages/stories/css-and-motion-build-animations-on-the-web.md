@@ -3,11 +3,12 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: CSS and Motion—You Too Can Build Animations on The Web
 excerpt: CSS and Motion is a short and effective guide sharing just enough fundamentals to help you start developing those buttery smooth animations on your web pages.
+tag: technical
 draft: false
 pages: 0
 author: Favour Felix
-cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
-banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8'
+cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8"
+banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fcss-n-motion.webp?alt=media&token=b6a4e13a-2ef0-4a2d-acee-6c58b49dbde8"
 readTime: 4 mins
 year: 2022
 date: September 26, 2022
@@ -16,14 +17,13 @@ updatedAt: September 17, 2022 2:34 PM
 
 If you are a developer like me, then you most likely have visited some websites and left with awe; awe of how the animations on these sites are so sleek and demonstrative of the brand’s identity. You build very beautiful user interfaces, but adding motion to your projects would give it some sort of elegance, so you need to fill in that missing piece — oh well, you are in the right place. **CSS and Motion** is a short and effective guide sharing just enough fundamentals to help you start developing those buttery smooth animations on your web pages.
 
-Understanding the [Principles of Motion](https://material.io/design/motion/understanding-motion.html#principles) is very essential for any motion designer or developer; animations and transitions could be used carelessly on web pages, which could rather distract the user than excite them. As a rule of thumb, before animating any element, make sure your animation is passing some sort of information to the user. Also, ensure that your animation keeps your user focused on what is necessary. A good instance to use animations is at the end of a user journey, i.e. completing a milestone — this makes your animation expressive. 
+Understanding the [Principles of Motion](https://material.io/design/motion/understanding-motion.html#principles) is very essential for any motion designer or developer; animations and transitions could be used carelessly on web pages, which could rather distract the user than excite them. As a rule of thumb, before animating any element, make sure your animation is passing some sort of information to the user. Also, ensure that your animation keeps your user focused on what is necessary. A good instance to use animations is at the end of a user journey, i.e. completing a milestone — this makes your animation expressive.
 
 For some depth on motion design, see [Understanding Motion](https://material.io/design/motion).
 
 Now that we understand when motion should be used, we need to understand the two ways to propagate motion in CSS — Transitions and Animations.
 
 > What are Transitions and Animations in CSS? When do I need to use one over the other?
-> 
 
 ## Transitions
 
@@ -37,9 +37,9 @@ Transition is a motion between two keyframes; think of keyframes as a grouping o
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-Please note that the `transition` property  in the codepen is a shorthand property, containing the `transition-delay` and `transition-timing-function`. 
+Please note that the `transition` property in the codepen is a shorthand property, containing the `transition-delay` and `transition-timing-function`.
 
-The code snippet above shows a simple CSS transition that steadily modifies the CSS `color` and `padding` properties from their initial state to the `:hover` state in one second (`1s`) — The CSS Transition is triggered by a hover action. 
+The code snippet above shows a simple CSS transition that steadily modifies the CSS `color` and `padding` properties from their initial state to the `:hover` state in one second (`1s`) — The CSS Transition is triggered by a hover action.
 
 Transitions are triggered by pseudo-classes like `:hover`, `:active`, `:focus` but not limited to pseudo-classes. They can be added as bare styles while manipulating the DOM to activate the transition motion. A perfect example for this is exit and enter transitions.
 
@@ -52,7 +52,7 @@ Transitions are triggered by pseudo-classes like `:hover`, `:active`, `:focus` b
 }
 ```
 
-In the above code snippet, the transition is triggered when the `enter` class is added to the  `transition-box` div element. 
+In the above code snippet, the transition is triggered when the `enter` class is added to the `transition-box` div element.
 
 ## Animations
 

@@ -3,6 +3,7 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: "How long does the Perfect Delight last?"
 excerpt: "How easy is it to be disconnected from the Father? How deeply do I have to be soaked in his word to cope? How much of the flesh has eaten deep before I found my salvation and saw the light? How much does the blood of Jesus help make things easy?"
+tag: non-technical
 draft: false
 pages: 0
 author: Favour Felix

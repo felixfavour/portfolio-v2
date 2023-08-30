@@ -3,6 +3,7 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: "The 10x Engineer: A Guide to Building Efficient Software and Achieving Career Success"
 excerpt: Think of a resource that empowers you to become a great employee, an efficient leader and a high-performing engineer — that is precisely what this article seeks to achieve.
+tag: technical
 draft: false
 pages: 0
 author: Favour Felix

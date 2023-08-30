@@ -3,11 +3,12 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: I wanted to be an entrepreneur, but was I ready?
 excerpt: Building Revaise with the intention of selling it as a product meant we had to answer some really hard questions about the business. I wasn’t naive; I knew this moment would come—but was I really prepared?
+tag: non-technical
 draft: false
 pages: 0
 author: Favour Felix
-cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fthe-journey-1.jpg?alt=media&token=ff2bfe08-3c43-47ef-8a1d-0beee97cd890'
-banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fthe-journey-1-og.jpg?alt=media&token=b7cf4602-caad-4f93-a0b9-e118b30e12c4'
+cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fthe-journey-1.jpg?alt=media&token=ff2bfe08-3c43-47ef-8a1d-0beee97cd890"
+banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fthe-journey-1-og.jpg?alt=media&token=b7cf4602-caad-4f93-a0b9-e118b30e12c4"
 readTime: 5 mins
 year: 2023
 date: March 14, 2023

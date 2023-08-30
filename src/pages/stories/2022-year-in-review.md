@@ -1,13 +1,14 @@
 ---
 type: story
 layout: ../../layouts/StoryLayout.astro
-title: '2022: Year In Review'
-excerpt: '2022 was a lot for me, completed and started a lot of remarkable things. In this article, I share a couple of things I learnt while going through my challenges, there might be lessons for you too.'
+title: "2022: Year In Review"
+excerpt: "2022 was a lot for me, completed and started a lot of remarkable things. In this article, I share a couple of things I learnt while going through my challenges, there might be lessons for you too."
+tag: non-technical
 draft: false
 pages: 0
 author: Favour Felix
-cover: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-1.jpeg?alt=media&token=37fbe434-8a41-4d22-857e-cc40405f5de7'
-banner: 'https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-1.webp?alt=media&token=b614f1d9-37b4-4dee-b9fd-414dc9638f76'
+cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-1.jpeg?alt=media&token=37fbe434-8a41-4d22-857e-cc40405f5de7"
+banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2F2022-1.webp?alt=media&token=b614f1d9-37b4-4dee-b9fd-414dc9638f76"
 readTime: 7 mins
 year: 2022
 date: December 26, 2022
@@ -15,6 +16,7 @@ updatedAt: December 26, 2022 09:01 PM
 ---
 
 Hello, I should have started this at the beginning of the year. But here I am starting on the 12th day of November. Thankfully, I take a lot of photos, and you know what they say, “pictures tell the whole story”. So give me a minute to take a look at my gallery.
+
 <section class="first">
 . . .
 </section>
@@ -35,7 +37,7 @@ Like any other person that loves what they do, I work hard, maybe too hard. I am
 
 I did a lot of impactful stuff at work this year, I worked with some diverse teams in England, the US and India, all remotely. I enjoyed my time with all of these guys, asked questions about their culture and just tried to get as much exposure as I could.
 
-What was the impactful stuff I worked on? I did a lot, but the one I am most proud of is [Robin](https://robinapp.co?ref=favourfelix.com). Robin helps you build apps like Whatsapp or Telegram in about 5 minutes. Robin is growing and achieving numbers, and I am so proud that I am one of the reasons it exists in the first place. 
+What was the impactful stuff I worked on? I did a lot, but the one I am most proud of is [Robin](https://robinapp.co?ref=favourfelix.com). Robin helps you build apps like Whatsapp or Telegram in about 5 minutes. Robin is growing and achieving numbers, and I am so proud that I am one of the reasons it exists in the first place.
 
 Some other cool stuff I worked on at work were [Kinly](http://bekinly.com), [Brassica](http://brassicafin.com) and [Tendar](http://tendar.co).
 
@@ -87,11 +89,11 @@ I also spoke publicly in two places this year, the first with over 7,000 people 
 
 Some other big achievements for me this year were [reading books](https://favourfelix.com/books/) and playing the piano—I read three books this year, and they all were different genres; history, theology and business. That’s progress in my books (I promise, no pun intended).
 
-I also learnt to play the piano. Playing the piano is so soothing. 
+I also learnt to play the piano. Playing the piano is so soothing.
 
 Okay, I’d be honest, the truth is I might never be really good at playing the piano, but if I can make melodies with my voice and some basic chords on the piano, I think I’d be fine.
 
-Finally, I did not take the gym seriously this year, and I probably would do the same next year. However, I’m hoping I can be more cautious about what I eat and my physical well-being in general. 
+Finally, I did not take the gym seriously this year, and I probably would do the same next year. However, I’m hoping I can be more cautious about what I eat and my physical well-being in general.
 
 ## Relationships
 
@@ -99,9 +101,9 @@ Finally, I did not take the gym seriously this year, and I probably would do the
 
 I met a lot of beautiful souls last year, particularly in school, work and church, maybe only those. My social sphere in 2022 was quite small because I had a lot to do. I’m pretty confident that 2023 would be significantly different (if the cost of transportation drops in the new year).
 
-The little friends I had really made all the difference. 
+The little friends I had really made all the difference.
 
-Finally, for a relationship with a significant other, as you would have guessed, I am without a significant other. With all the plans in front of me, it’s somewhat daunting to try dating. *I no dey rule am out sha*. My hands and eyes are open.
+Finally, for a relationship with a significant other, as you would have guessed, I am without a significant other. With all the plans in front of me, it’s somewhat daunting to try dating. _I no dey rule am out sha_. My hands and eyes are open.
 
 ## Faith
 
@@ -111,7 +113,7 @@ Save the best for the last? Yes, please.
 
 I try to make sure that everything I do stems from my faith and beliefs, and if you are one that talks to me frequently, the realization should not be far-fetched.
 
-I set a lot of goals for the new year. Obviously, you can’t be too close to God, so I wanted to be closer—spend more time in His word, pray more and just love God more. 
+I set a lot of goals for the new year. Obviously, you can’t be too close to God, so I wanted to be closer—spend more time in His word, pray more and just love God more.
 
 Unfortunately, as committed as I might have sounded in the penultimate paragraphs, I did not hit my targets as much as I should have. I’m blaming it on the overtime hours I, intentionally, spent working for no just cause.
 

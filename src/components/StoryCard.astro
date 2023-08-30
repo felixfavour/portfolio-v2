@@ -3,7 +3,7 @@ export interface Props {
   story: object | any
 }
 
-const { story } = Astro.props;
+const { story } = Astro.props
 ---
 
 <div class="card-ctn">
@@ -11,8 +11,11 @@ const { story } = Astro.props;
     {story.frontmatter.title}
   </a>
   <div class="row">
-    <div>{ story.frontmatter.date }</div>
-    <div>Read for <span class="bold">{ story.frontmatter.readTime }</span></div>
+    <div>
+      <span class={story.frontmatter.tag}></span>
+      {story.frontmatter.date}
+    </div>
+    <div>Read for <span class="bold">{story.frontmatter.readTime}</span></div>
   </div>
 </div>
 
@@ -31,7 +34,7 @@ const { story } = Astro.props;
     margin-top: 0.6rem;
   }
   .row > div:nth-child(1) {
-    border-right: 2px solid #E7E7E7;
+    border-right: 2px solid #e7e7e7;
     padding-right: 1rem;
     margin-right: 1rem;
   }

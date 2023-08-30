@@ -3,6 +3,7 @@ type: story
 layout: ../../layouts/StoryLayout.astro
 title: Container Queries – Responsive Design Beyond the Viewport
 excerpt: Web development has evolved with the advent of JavaScript frameworks—particularly with the use of components as building blocks in developing User Interfaces. In the component-driven world we are living in, we can see the benefits of container queries in Responsive Web Design. In this article, we will explore responsive design beyond the viewport with Container Queries and analyze an example of a fully responsive site using just container queries.
+tag: technical
 draft: false
 pages: 0
 author: Favour Felix
