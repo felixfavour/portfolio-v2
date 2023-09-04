@@ -37,8 +37,8 @@ import Layout from "../layouts/Layout.astro"
 
 <style>
   .texts {
-    padding: 10% 0;
-    padding-top: 20%;
+    padding: 8vh 0;
+    padding-bottom: 0;
   }
   h1 {
     font-weight: 500;
@@ -95,6 +95,11 @@ import Layout from "../layouts/Layout.astro"
   /* ----------
 	MEDIA QUERIES
 	------------*/
+  @media screen and (min-height: 1000px) {
+    .texts {
+      min-height: 70vh;
+    }
+  }
   @media screen and (max-width: 1500px) {
   }
 
