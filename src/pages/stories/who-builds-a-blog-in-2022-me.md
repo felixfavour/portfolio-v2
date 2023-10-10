@@ -26,7 +26,7 @@ Here’s a quick outline for the story I am about to tell:
 - [The beginning](#the-beginning-2011---2015)
 - [The middle](#the-middle-2016---2021)
 - [There will be no end](#there-will-be-no-end-2022---forever)
-- [The technical jargon](#technical-jargon)
+- [The technical jargon and conclusion](#technical-jargon-and-conclusion)
 - [Glossary](#glossary)
 
 ![Image of a man in Ikeja, Lagos and the sunset](https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/stories%2Fthe-beginning-wbab.webp?alt=media&token=5a16fd97-979a-4d55-ae07-651895b865d5)
@@ -65,9 +65,17 @@ Finally, 2020/2021 was a pivotal season for me, especially from a faith perspect
 
 I wrote my first piece on the 17th of September, 2022, after teasing a launch in October 2021.
 
-## Technical Jargon
+## Technical Jargon and Conclusion
 
 This story has transcended from being a story about the technicalities of this blog to one of my early blogging experiences. Sharing how I designed and built this would fit better in its own article.
+
+<section class="first">
+. . .
+</section>
+
+To wrap things up, one of the key takeaways from this article, along with some context from previous posts on this blog, is my inclination always to start something. There was a time when I didn't particularly appreciate this aspect of myself because it seemed like I embarked on numerous endeavours without much tangible progress to showcase.
+
+However, in hindsight, each of these experiences played a crucial role in preparing me for the unforeseen challenges that awaited me in my subsequent experiences. Moreso, the drive I displayed during those initial phases has proven to be an invaluable asset in my little achievements within the corporate world.
 
 ## Glossary
 
