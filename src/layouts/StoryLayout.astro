@@ -11,6 +11,7 @@ const { frontmatter } = Astro.props
   readTime={frontmatter.readTime}
   publishedDate={new Date(frontmatter.date).toISOString()}
   lastUpdated={new Date(frontmatter.updatedAt).toISOString()}
+  route={frontmatter.url}
 >
   <div class="section">
     <div class="inner">

@@ -1,30 +1,35 @@
 ---
-import Layout from "./Layout.astro";
-const {frontmatter} = Astro.props;
+import Layout from "./Layout.astro"
+const { frontmatter } = Astro.props
 ---
 
-<Layout 
-	title={`${frontmatter.title} by ${frontmatter.author} - Book Review`}
-	description={frontmatter.excerpt}
+<Layout
+  title={`${frontmatter.title} by ${frontmatter.author} - Book Review`}
+  description={frontmatter.excerpt}
   img={frontmatter.banner}
   type="article"
   readTime={frontmatter.readTime}
   publishedDate={new Date(frontmatter.date).toISOString()}
   lastUpdated={new Date(frontmatter.updatedAt).toISOString()}
+  route={frontmatter.url}
 >
-	<div class="section">
-		<div class="inner">
+  <div class="section">
+    <div class="inner">
       <h2 class="title">
-        { frontmatter.title }
+        {frontmatter.title}
       </h2>
       <div class="row">
-        <div>{ frontmatter.pages } pages</div>
-        <div>By <span class="bold">{ frontmatter.author }</span></div>
+        <div>{frontmatter.pages} pages</div>
+        <div>By <span class="bold">{frontmatter.author}</span></div>
       </div>
       <main>
         <div class="cover-img-ctn">
           <div class="backdrop"></div>
-          <div class="cover-img" style={`background-image: url(${frontmatter.cover})`}></div>
+          <div
+            class="cover-img"
+            style={`background-image: url(${frontmatter.cover})`}
+          >
+          </div>
         </div>
         <div class="texts">
           <h3>Book Review</h3>
@@ -33,19 +38,19 @@ const {frontmatter} = Astro.props;
           </article>
         </div>
       </main>
-		</div>
-	</div>
+    </div>
+  </div>
 </Layout>
 
 <style>
   .inner {
     padding-top: 5rem;
   }
-	.title {
-		font-weight: 500;
-		font-size: 3.5rem;
-		line-height: 4.1rem;
-	}
+  .title {
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 4.1rem;
+  }
   .row {
     display: flex;
     font-size: 1.1rem;
@@ -54,7 +59,7 @@ const {frontmatter} = Astro.props;
     margin-bottom: 3rem;
   }
   .row > div:nth-child(1) {
-    border-right: 2px solid #E7E7E7;
+    border-right: 2px solid #e7e7e7;
     padding-right: 1rem;
     margin-right: 1rem;
   }
@@ -164,7 +169,7 @@ const {frontmatter} = Astro.props;
       margin-bottom: 2rem;
     }
     .row > div:nth-child(1) {
-      border-right: 2px solid #E7E7E7;
+      border-right: 2px solid #e7e7e7;
       padding-right: 0.6rem;
       margin-right: 0.6rem;
     }

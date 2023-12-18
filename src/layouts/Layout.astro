@@ -19,6 +19,7 @@ export interface Props {
   readTime: string
   publishedDate: string
   lastUpdated: string
+  route: string
 }
 
 const {
@@ -30,6 +31,7 @@ const {
   publishedDate,
   lastUpdated,
   favicon,
+  route,
 } = Astro.props
 ---
 
@@ -39,6 +41,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href={favicon || "/favicon.svg"} />
+    <link rel="canonical" href={`https://favourfelix.com${route}`} />
     <meta name="keywords" content="" />
     <meta name="title" content={title || defaultTitle} />
     <meta name="description" content={description || defaultDescription} />
