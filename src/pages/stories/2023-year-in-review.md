@@ -95,7 +95,7 @@ How has it been? It's been quite the adventure. I spoke to two audiences this ye
 
 On mentorships, I'm learning to accept that perhaps I am not too inexperienced to guide someone on their journey. Even though I may feel unprepared for a broader mentoring role, I recognize the importance of respecting the paths of those humble enough to seek my guidance and those who believe in my ability to lead. Thank you to all of you!
 
-To close out the personal development chapter for the year, I'll share my progress with the piano. I began learning in May 2022, and since then, I've gained a greater level of dexterity while playing. Here's a clip of me playing a piece:
+To close out the personal development chapter for the year, I'll share my progress with the piano. I began learning in May 2022, and since then, I've gained a greater level of dexterity while playing. I also challenged myself by uploading 23 reels of me singing and playing the piano. Here's a clip of me playing a piece:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z099yrOd_Ew?si=J72wrkjKLsEy305o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -112,7 +112,7 @@ There's maybe too much to say, but what has 2023 taught me about relationships? 
 
 For starters, if you can't find contentment in yourself, your faith and your immediate family, you won't find it in a relationship with someone else.
 
-Secondly, a relationship, however glamorous it looks, is akin to a full-time job in terms of attention, time and sacrifice. Hence, it's essential to introspect and assess whether you possess ample reserves of these resources before entering into one—Maybe you have a *coconut head* and will proceed with your plans regardless; good luck! Just try not to hurt anyone, and know I tried to warn you.
+Secondly, a relationship, however glamorous it looks, is akin to a full-time job in terms of attention and time spent. Hence, it's essential to introspect and assess whether you possess ample reserves of these resources before entering into one—Maybe you have a *coconut head* and will proceed with your plans regardless; good luck! Just try not to hurt anyone, and know I tried to warn you.
 
 Thirdly, the one who finds a wife finds a good thing and obtains favour from God. So yes, this is a beckon to all my eligible friends to *please do fast and invite me* to eat rice and dance. Do it now, so I don't have to pay ridiculous prices for plane tickets when I jand. *Abeg*.
 
