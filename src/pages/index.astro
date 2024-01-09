@@ -1,25 +1,25 @@
 ---
-import StoryCard from "../components/StoryCard.astro";
-import BookCard from "../components/BookCard.astro";
-import Layout from "../layouts/Layout.astro";
+import StoryCard from "../components/StoryCard.astro"
+import BookCard from "../components/BookCard.astro"
+import Layout from "../layouts/Layout.astro"
 
-let books = await Astro.glob("../pages/books/*.md");
+let books = await Astro.glob("../pages/books/*.md")
 books = books
   .sort(
     (a, b) =>
       new Date(b.frontmatter.updatedAt).getTime() -
       new Date(a.frontmatter.updatedAt).getTime()
   )
-  .slice(0, 3);
+  .slice(0, 3)
 
-let stories = await Astro.glob("../pages/stories/*.md");
+let stories = await Astro.glob("../pages/stories/*.md")
 stories = stories
   .sort(
     (a, b) =>
       new Date(b.frontmatter.updatedAt).getTime() -
       new Date(a.frontmatter.updatedAt).getTime()
   )
-  .slice(0, 3);
+  .slice(0, 3)
 ---
 
 <Layout
@@ -36,12 +36,12 @@ stories = stories
         </h1>
         <h2>and I honestly can’t keep it to myself.</h2>
         <p>
-          I am currently entrepreneur-ing at <a
+          I am currently building <a
             target="_blank"
             href="https://revaise.com"
             class="bold">Revaise</a
-          > (we are helping team members grow with constructive peer reviews), and
-          I lead front-end engineering efforts at <a
+          > to help team members grow with constructive peer reviews, previously,
+          I led front-end engineering efforts at <a
             target="_blank"
             href="https://acumen.digital"
             class="bold">Acumen</a
