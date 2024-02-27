@@ -5,7 +5,7 @@ title: "The Great Divorce"
 excerpt: The Great Divorce moulds a fictional setting of a bus ride from Hell to Heaven and the individual choices of the passengers while on the ride and upon arrival.
 draft: false
 pages: 146
-author: CS Lewis
+author: C.S Lewis
 cover: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/books%2Fthe-great-divorce.webp?alt=media&token=b3157280-3584-4bb1-bff0-de85c1dfefce"
 banner: "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/books%2Fthe-great-divorce-banner.webp?alt=media&token=0e29565b-021e-4bc2-ad0b-889f445bb3b9"
 readTime: 2 mins
