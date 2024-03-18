@@ -1,0 +1,54 @@
+---
+export interface Props {
+  story: object | any
+}
+
+const { story } = Astro.props
+---
+
+<div class="card-ctn">
+  <a href={story.url} class="title">
+    {story.frontmatter.title}
+  </a>
+  <div class="row">
+    <div>
+      <span class={story.frontmatter.tag}></span>
+      {story.frontmatter.date}
+    </div>
+    <div>Read for <span class="bold">{story.frontmatter.readTime}</span></div>
+  </div>
+</div>
+
+<style>
+  .card-ctn {
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .row {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0.6rem;
+  }
+  .row > div:nth-child(1) {
+    border-right: 2px solid #e7e7e7;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+
+  /* ----------
+  MEDIA QUERIES
+  ------------*/
+  @media screen and (max-width: 920px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+</style>

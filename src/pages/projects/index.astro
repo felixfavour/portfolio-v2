@@ -1,0 +1,162 @@
+---
+// import ProjectCard from "../../components/ProjectCard.astro"
+import Layout from "../../layouts/Layout.astro"
+
+// let projects = await Astro.glob("../projects/*.md")
+// projects = projects.sort(
+//   (a, b) =>
+//     new Date(b.frontmatter.updatedAt).getTime() -
+//     new Date(a.frontmatter.updatedAt).getTime()
+// )
+
+// const currentYear = new Date().getFullYear()
+
+// let projectYears: Set<number> | Array<number> = new Set()
+// for (const project of projects) {
+//   projectYears.add(project.frontmatter.year)
+// }
+// projectYears = Array.from(projectYears)
+---
+
+<Layout
+  title="Projects — Favour Felix"
+  description="Some companies I'm working, and some exciting projects I have deployed that might be helpful to you."
+>
+  <div class="section">
+    <div class="inner">
+      <div class="texts">
+        <h1><span class="emphatic">Oops!</span> This page is in progress.</h1>
+        <h2>
+          If you need to see my professional experience, see <a
+            target="_blank"
+            href="https://linkedin.com/in/favourfelix">linkedin</a
+          > or my <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1tY3M2I61luAbx6G44hetXelRz3yXcb3zcpdO69smxlA/edit?usp=sharing"
+            >resumé</a
+          >
+        </h2>
+        <p>
+          However, some projects that you might not find on the media above are <a
+            target="_blank"
+            href="https://revaise.com"
+            class="bold">Revaise</a
+          > and <a href="/youversion-search" class="bold">Youversion Search</a>.
+        </p>
+      </div>
+      <!-- {
+        projectYears.map((year) => (
+          <section>
+            {year === currentYear && <h2>Articles I wrote this year.</h2>}
+            {year === currentYear - 1 && <h2>Articles I wrote last year.</h2>}
+            {year < currentYear - 1 && <h2>Articles I wrote in {year}</h2>}
+            <div class="list">
+              {projects
+                .filter((project) => project.frontmatter.year === year)
+                .map((project) => (
+                  <ProjectCard project={project} />
+                ))}
+            </div>
+          </section>
+        ))
+      } -->
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .texts {
+    padding: 5rem 0;
+    padding-top: 7rem;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 5vh;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-top: 0.6rem;
+    margin-bottom: 3vh;
+  }
+  p {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  p a {
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+  }
+
+  section {
+    margin-bottom: 5rem;
+  }
+  section a {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+  }
+  .list {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+
+  /* ----------
+	MEDIA QUERIES
+	------------*/
+  @media screen and (max-width: 1500px) {
+  }
+
+  @media screen and (max-width: 1100px) {
+  }
+
+  @media screen and (max-width: 920px) {
+    h1 {
+      font-size: 4.25rem;
+      line-height: 5.2rem;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2.9rem;
+      margin-top: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .texts {
+      padding-top: 15%;
+    }
+    h1 {
+      font-size: 3.25rem;
+      line-height: 3.6rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      padding-top: 0.8rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-top: 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
