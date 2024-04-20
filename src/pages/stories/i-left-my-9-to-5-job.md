@@ -77,7 +77,7 @@ A year and eight months have gone by, and I still don’t know why he said yes�
 
 Doing my own thing at night and on weekends gave me some newfound purpose in my career, and I was more excited for evenings and weekends so I could continue pursuing this dream wherever it took me.
 
-Just as it is with seeing pretty ladies, the last pretty lady looks less pretty. That was my tale with Revaise and Acumen. However, make no mistake; till I handed in the company’s belongings, Acumen always took necessary precedence over Revaise.
+Just as it is with seeing pretty ladies, the last pretty lady looks less pretty than the most recent. That was my tale with Revaise and Acumen. However, make no mistake; till I handed in the company’s belongings, Acumen always took necessary precedence over Revaise.
 
 ## Final days at Acumen and Exit
 
@@ -87,7 +87,7 @@ Life felt so routine. I asked myself almost every week: Will I continue to leave
 
 And even if I ensured that I gave it my 101% till I left the company, on many days, I felt very unmotivated to work (I understand this is how work is for many people usually, but not for me)
 
-So I asked myself, how fun would it be to go back to early 2020 before the job and just have fun with all the information you have gathered in all these years.
+So I asked myself, how fun it would be to go back to early 2020 before the job and just have fun with all the information you have gathered in all these years.
 
 And so I started preparing myself for an exit. I left officially on the 30th of December, 2023. My unofficial exit is complicated because Acumen is a forever home, I hope.
 
