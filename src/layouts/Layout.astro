@@ -7,7 +7,7 @@ const defaultTitle = "Favour Felix — Entrepreneur, Software Engineer"
 const defaultDescription =
   "I am crafting a future I can be proud of and, I honestly can’t keep it to myself. I am a tech entrepreneur at Revaise and a software engineer at Acumen."
 const defaultImage =
-  "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/og-home.png?alt=media&token=73ed34b0-0fc4-47c7-b334-e810dbdab520"
+  "https://firebasestorage.googleapis.com/v0/b/favour-portfolio.appspot.com/o/favourfelix-og.webp?alt=media&token=97dde69d-8187-42ff-a34d-6bdd960fe3e0"
 const defaultType = "website"
 
 export interface Props {
@@ -20,6 +20,7 @@ export interface Props {
   publishedDate: string
   lastUpdated: string
   route: string
+  noFrontRow: boolean
 }
 
 const {
@@ -32,6 +33,7 @@ const {
   lastUpdated,
   favicon,
   route,
+  noFrontRow,
 } = Astro.props
 ---
 
@@ -96,11 +98,15 @@ const {
         <Subscribe />
       </div>
     </div>
-    <div class="front-row-btn-ctn section">
-      <div class="inner">
-        <button class="front-row-btn"> Front-row Seat 👋🏿</button>
-      </div>
-    </div>
+    {
+      !noFrontRow && (
+        <div class="front-row-btn-ctn section">
+          <div class="inner">
+            <button class="front-row-btn"> Front-row Seat 👋🏿</button>
+          </div>
+        </div>
+      )
+    }
     <script></script>
   </body>
 </html>
