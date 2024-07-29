@@ -14,6 +14,7 @@ export interface Props {
   favicon: string
   title: string
   description: string
+  canonical: string
   img: string
   type: string
   readTime: string
@@ -26,6 +27,7 @@ export interface Props {
 const {
   title,
   description,
+  canonical,
   img,
   type,
   readTime,
@@ -43,7 +45,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href={favicon || "/favicon.svg"} />
-    <link rel="canonical" href={`https://favourfelix.com${route}`} />
+    <link rel="canonical" href={canonical || `https://favourfelix.com${route}`} />
     <meta name="keywords" content="" />
     <meta name="title" content={title || defaultTitle} />
     <meta name="description" content={description || defaultDescription} />
