@@ -7,7 +7,7 @@ const { story } = Astro.props
 ---
 
 <div class="card-ctn">
-  <a href={story.url} class="title">
+  <a href={`${story.url}/`} class="title">
     {story.frontmatter.title}
   </a>
   <div class="row">

@@ -7,7 +7,7 @@ const { book } = Astro.props;
 ---
 
 <div class="card-ctn">
-  <a href={book.url} class="title">
+  <a href={`${book.url}/`} class="title">
     {book.frontmatter.title}
   </a>
   <div class="row">
