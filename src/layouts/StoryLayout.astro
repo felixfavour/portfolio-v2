@@ -1,6 +1,14 @@
 ---
+import StoryCard from "../components/StoryCard.astro";
 import Layout from "./Layout.astro"
 const { frontmatter } = Astro.props
+
+let stories = await Astro.glob('../pages/stories/*.md');
+stories = stories.filter((story) => story.frontmatter.tag === frontmatter.tag).filter(story => story.frontmatter.title !== frontmatter.title)
+// select 4 random stories
+const randomStories = stories.sort(() => Math.random() - 0.5).slice(0, 3)
+stories = randomStories
+
 ---
 
 <Layout
@@ -15,9 +23,9 @@ const { frontmatter } = Astro.props
 >
   <div class="section">
     <div class="inner">
-      <h2 class="title">
+      <h1 class="title">
         {frontmatter.title}
-      </h2>
+      </h1>
       <div class="row">
         <div>
           <span class={frontmatter.tag}> </span>{frontmatter.date}
@@ -36,6 +44,16 @@ const { frontmatter } = Astro.props
         <article>
           <slot />
         </article>
+        <div class="more-stories">
+          <h2 class="ms-title">
+            Read similar stories that might interest you
+          </h2>
+          <div class="ms-stories">
+            {stories.map((story) => (
+              <StoryCard story={story} />
+            ))}
+          </h2>
+        </div>
       </main>
     </div>
   </div>
@@ -96,6 +114,19 @@ const { frontmatter } = Astro.props
     display: block;
     font-family: "IBM Plex Serif", sans-serif;
   }
+  
+  .more-stories {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ms-title {
+    color: var(--primary-dark);
+    font-weight: 500;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-size: 2rem;
+  }
 
   /* ----------
   MEDIA QUERIES
@@ -139,6 +170,10 @@ const { frontmatter } = Astro.props
     }
     p > span {
       margin-bottom: 1.5rem;
+    }
+    .ms-title {
+      font-size: 1.5rem;
+      margin-bottom: 5%;
     }
   }
 </style>
