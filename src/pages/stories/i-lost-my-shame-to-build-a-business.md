@@ -15,7 +15,7 @@ date: October 2, 2024
 updatedAt: October 2, 2024 04:00 PM
 ---
 
-I've moved around a lot in my life, whether in my home area, school area, business, church, or even workplace, and all of these movements have happened around the perimeters of Lagos, Nigeria, and across the globe. In the course of my moving about, I have evidently made a few friends, built some relationships and had a few friends.
+I've moved around a lot in my life, whether in my home area, school area, business, church, or even workplace—all of these movements have happened around the perimeters of Lagos, Nigeria, and across the globe. In the course of my moving about, I have evidently made a few friends, built some relationships and had a few friends.
 
 What's more? You make these connections, and you meet these people at a certain point in your life where you are probably hyperfocused on one thing, and the next time your paths cross, you have moved on to something else—then, it feels like life is moving too fast.
 
