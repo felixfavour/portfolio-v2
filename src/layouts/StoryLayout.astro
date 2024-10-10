@@ -53,6 +53,13 @@ stories = randomStories
               <StoryCard story={story} />
             ))}
           </h2>
+        <a
+          aria-label="Revaise LinkedIn link"
+          href="/stories/"
+          class="read-all"
+        >
+          Read all stories
+        </a>
         </div>
       </main>
     </div>
@@ -126,6 +133,18 @@ stories = randomStories
     margin-bottom: 3%;
     margin-top: 5%;
     font-size: 2rem;
+  }
+  .more-stories a.read-all {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ffffff;
+  }
+  .more-stories .read-all:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
   }
 
   /* ----------
