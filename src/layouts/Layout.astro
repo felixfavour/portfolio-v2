@@ -391,7 +391,29 @@ const {
     font-family: monospace;
     color: var(--primary);
   }
-  article body {
+  article aside {
+    font-size: 3rem;
+  }
+  article aside {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1.2rem 1.6rem;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .dark article aside {
+    background: black;
+  }
+  article aside p {
+    font-size: 1.25rem;
+    padding-bottom: 0;
   }
   article blockquote {
     font-size: 150%;
@@ -529,6 +551,10 @@ const {
       border-top-right-radius: 14px;
       border-top-left-radius: 14px;
       font-weight: 600;
+    }
+    article aside p {
+      font-size: 1.05rem;
+      line-height: 2.1rem;
     }
     article blockquote {
       font-size: 120%;
