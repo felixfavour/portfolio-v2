@@ -41,7 +41,7 @@ This gentle pressure motivated me to start job hunting. Despite being an experie
 
 Finally, after interviewing with multiple companies, I got an offer I liked in late November. It's a really great opportunity—I just hope I can make the most of it.
 
-### Goals for Work
+#### Goals for Work
 
 I just want to be an excellent team player. That's it! There'd be too many sacrifices I'll have to make, but it's for the best. I also didn’t think I’d return to the 9-5 so quickly, but I’m here now. I might as well do it really well.
 
@@ -66,7 +66,7 @@ If you're curious about how the first venture, [Cloud of Worship](https://cloudo
 
 </aside>
 
-### Goals for Entrepreneurship
+#### Goals for Entrepreneurship
 
 Despite having a full-time job now, I aim to build passive income streams, and I especially want [Cloud of Worship](https://cloudofworship.com) to generate its first revenue. This will require growing [CoW](https://cloudofworship.com) at least tenfold from where it is now.
 
@@ -89,7 +89,7 @@ As an amateur writer, the biggest reason I never get as much content out is beca
 
 </aside>
 
-### Goals for Creative Writing
+#### Goals for Creative Writing
 
 I will write and complete a new article every single week about my experience that week even if it is just a hundred words. I will also lean into AI to help refine my work so I don’t worry too much about tarnishing my perceived literal proficiency.
 
@@ -105,7 +105,7 @@ My completed reads were [**Atomic Habits**](https://favourfelix.com/books/atomic
 
 I also ventured into fiction this year—an experience that left me scarred. That's all I'll say about that publicly.
 
-### Goals for Reading
+#### Goals for Reading
 
 No goals for reading in 2025, to be honest, I’ll just continue from where I stopped last year. I bought a truckload of books that I never got around to reading. And if I get to beat my 2025 record, then lucky me!
 
@@ -132,7 +132,7 @@ I didn't visit the gym at all in 2024, and I neglected diet and exercise until l
 
 On a final note, I did something completely out of character—something I've never shared with anyone, not even my family. If you guess what it is, you'll receive a gift from me. [You can reply to this email to guess correctly]
 
-### Goals for Personal Development
+#### Goals for Personal Development
 
 I intend to learn how to play scales on the guitar in 2025 and also take dieting and body exercise a lot more seriously.
 
@@ -159,7 +159,7 @@ The conference just had a fantastic lineup of speakers, many people imagined I w
 
 Although it's not traditional public speaking, I was quite active on LinkedIn this year, sharing natural and genuine experiences. I've found that this regular online communication actually improves my public speaking skills when I'm in front of a live audience.
 
-### Goals for Public Speaking
+#### Goals for Public Speaking
 
 In the new year, I want to become more active on LinkedIn through spontaneous, authentic posts rather than overly polished content. This increased visibility that’s a result of LinkedIn activity could ultimately lead to more public speaking opportunities.
 
@@ -182,7 +182,7 @@ The Young Talent Programme at Lagos Business School introduced me to some incred
 
 Regarding romantic relationships, I often reflect on what a friend once told me—that they require the same dedication as a full-time job. This perspective has stayed with me. And if you're wondering, I’m not scared, just concerned.
 
-### Goals for Relationships
+#### Goals for Relationships
 
 I’m looking forward to meeting a lot more amazing human beings and being a better friend to the ones I’m already lucky to have in my corner. 
 
@@ -211,7 +211,7 @@ If you’re reading this, and you don’t know Jesus. I’ll just say He’s the
 
 </aside>
 
-### Goals for Faith
+#### Goals for Faith
 
 In the new year, I will consciously reduce church commitments to spend more dedicated time in my personal relationship with God. Lead at least one person to salvation whom I can personally disciple.
 
