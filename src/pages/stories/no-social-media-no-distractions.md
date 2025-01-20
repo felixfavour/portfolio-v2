@@ -17,7 +17,7 @@ updatedAt: Jan 19, 2025 8:00 PM
 
 First off, I’m so sorry this is coming late. Last week was a lot—I had to delete WhatsApp just to focus and get things done. As the week wrapped up, I was hardly ever home, so this couldn’t have happened any sooner than today.
 
-Looking back at last week, I found it really hard to work on (cloudofworship.com)[https://cloudofworship.com]. Every time I got home from work and lay down, I just felt completely drained. On the rare occasions when I had enough energy to turn on my laptop, it was mostly to wrap up tasks I had started at the office.
+Looking back at last week, I found it really hard to work on [cloudofworship.com](https://cloudofworship.com). Every time I got home from work and lay down, I just felt completely drained. On the rare occasions when I had enough energy to turn on my laptop, it was mostly to wrap up tasks I had started at the office.
 
 Despite the busy schedule, I made a conscious effort to reflect on God’s word. As I write this, I feel even more encouraged to keep at it in the coming week. 
 
