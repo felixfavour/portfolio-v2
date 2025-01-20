@@ -30,3 +30,5 @@ One thing I did notice, though, is that I’m more of a pessimist than I thought
 A great way to end—or start—the week is attending house fellowship on Sunday evenings. It’s usually filled with refreshing conversations and meaningful interactions, and I’m really looking forward to that again this week.
 
 I hope your week wasn’t as exhausting as mine. Feel free to reply to this email—I’d love to hear how your week went too!
+
+Have a wonderful week ahead.
