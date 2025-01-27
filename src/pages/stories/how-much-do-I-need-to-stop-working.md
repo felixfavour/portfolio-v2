@@ -17,7 +17,7 @@ updatedAt: Jan 26, 2025 8:00 PM
 
 Peer pressure really got to me this week—I gave in and downloaded Snapchat. It turns out that there were some serious consequences that I had to deal with. It might take a while to fully recover, but I’m pressing on, and I run with perseverance the race ahead of me.
 
-On a different note, I wrote something random this week, really random. I’m glad I didn’t overthink it and just started writing; otherwise, it probably never would have seen the light of day.
+On a different note, I [wrote something random](https://favourfelix.com/stories/test-product-market-fit-for-open-source-projects/) this week, really random. I’m glad I didn’t overthink it and just started writing; otherwise, it probably never would have seen the light of day.
 
 A realization hit me hard this week after coming across a quote by Blaise Pascal:
 
