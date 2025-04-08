@@ -35,7 +35,7 @@ One final thing: I need to remind myself (again) that being a Bible scholar is e
 
 It's hard, but if you practice the little you know, I think that will make Jesus happier rather than gathering knowledge of multiple bible references.
 
-I truly believe Jesus smiles more at the one who lives out a little scripture than the one who can recite a lot without living any of it. This is important because of how we human beings romanticize knowledge.
+This is important because of how we human beings romanticize knowledge.
 
 There’s more I want to say, but I’ll save that for next week. It was not long after all.
 
