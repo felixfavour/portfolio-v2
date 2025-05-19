@@ -21,7 +21,7 @@ Since I was nine, I’ve moved between two different states using public transpo
 
 But here’s the thing about public transport: You don’t know how distasteful it is until you try something else and come back.
 
-When I got the convenience of booking cabs or driving sometime in 2020, it felt like a smooth, deserved upgrade. But then three weeks ago, I decided to return to public transport.
+When I got the convenience of booking cabs or driving sometime in 2020, it felt like a smooth upgrade. But then three weeks ago, I decided to return to public transport.
 
 I had to relearn the routes. And I had to remind myself that public transport is more about transport than comfort. So, I had no right to feel bad about sitting at the back of a _danfo_, wedged between two grown people lapping someone else.  
 
