@@ -27,6 +27,6 @@ Unlike a considerable number of people, I love to clear out messages before I go
 
 Finally, just before we call it a week, I learnt something weighty this week, and I'd love to share it with you, and also with my future self who would be reading this. A lot has happened this week, and in the past weeks too, and it's what brought me here:
 
-Being an adult is understanding that many people would have a good reason not to show up for you when you need them the most and you can’t fault them for it. 
+> Being an adult is understanding that many people would have a good reason not to show up for you when you need them the most and you can’t fault them for it. 
 
 I hope this helped you as much as it did me. I'll see you next week!
