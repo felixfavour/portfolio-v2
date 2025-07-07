@@ -17,6 +17,6 @@ updatedAt: Jul 6, 2025 10:45 PM
 
 I would typically have this written down, but this Sunday, I lay on my bed and thought of how cool it would be to have this as a video instead. So guess what? I became a youtuber, just for you.
 
-This is my 27th weekly journal entry, and I'll see you next week. Or you'll see me, if it's a video ;)
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/lQic64pL2N0?si=OAE49BAyCHGs-X5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lQic64pL2N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+This is my 27th weekly journal entry, and I'll see you next week. Or you'll see me, if it's a video ;)
