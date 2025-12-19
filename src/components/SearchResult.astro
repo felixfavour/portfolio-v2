@@ -1,0 +1,137 @@
+---
+export interface Props {
+  item: any
+}
+
+const { item } = Astro.props
+const type = item.frontmatter.type === "story" ? "Story" : "Book Review"
+const tag = item.frontmatter.tag || "general"
+---
+
+<div
+  class="search-result-item"
+  data-title={item.frontmatter.title}
+  data-excerpt={item.frontmatter.excerpt}
+  data-tag={tag}
+  data-type={type}
+>
+  <div class="result-header">
+    <span class="result-type">{type}</span>
+    <span class="result-date">{item.frontmatter.date}</span>
+
+    <div class="result-meta">
+      <span class={`tag-indicator ${tag}`}></span>
+      <span>{item.frontmatter.readTime}</span>
+    </div>
+  </div>
+  <a href={`${item.url}/`} class="result-title">
+    {item.frontmatter.title}
+  </a>
+  <p class="result-excerpt">{item.frontmatter.excerpt}</p>
+</div>
+
+<style>
+  .search-result-item {
+    margin-bottom: 3rem;
+  }
+
+  body.dark .search-result-item {
+    border-bottom-color: #683f00;
+  }
+
+  .result-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .result-type {
+    color: #000000;
+    background: var(--primary-dark);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  body.dark .result-type {
+    color: #ffffff;
+  }
+
+  .result-date {
+    opacity: 0.6;
+  }
+
+  .result-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.8rem;
+    line-height: 2.4rem;
+    transition: color 0.3s;
+  }
+
+  .result-title:hover {
+    color: var(--primary-dark);
+  }
+
+  .result-excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .result-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  .tag-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: inline-block;
+  }
+
+  .tag-indicator.technical {
+    background: var(--primary);
+  }
+
+  .tag-indicator.non-technical {
+    background: var(--primary-dark);
+  }
+
+  /* ----------
+  MEDIA QUERIES
+  ------------*/
+  @media screen and (max-width: 600px) {
+    .search-result-item {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .result-title {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .result-excerpt {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+
+    .result-header {
+      font-size: 0.8rem;
+    }
+  }
+</style>
