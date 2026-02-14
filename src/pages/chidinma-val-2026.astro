@@ -1,0 +1,279 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Happy Valentine's Day ❤️</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main>
+      <section class="greeting" id="greeting">
+        <h1 id="greeting-text">Hi Chidinma</h1>
+      </section>
+
+      <section class="letter-wrapper" id="letter-wrapper">
+        <div class="paper" id="paper">
+          <p class="letter-line" data-line="1">
+            I was just watching a John Piper message and he spoke about ChatGPT
+            being fluent with the word and the knowledge of God's grace yet unable
+            to feel and truly understand the words that it speaks.
+          </p>
+          <p class="letter-line" data-line="2">
+            That helps me craft the way I feel about you. Words are cheap, but the
+            grit, feelings, the gruesome excuses I think we make for our excesses
+            are expensive.
+          </p>
+          <p class="letter-line" data-line="3">
+            Maybe you were expecting this, or maybe you aren't, it doesn't really
+            matter if it's something I think you deserve.
+          </p>
+          <p class="letter-line" data-line="4">
+            This is me saying, thank you, for what you are now and what I'm sure
+            you can be.
+          </p>
+          <p class="letter-line closing" data-line="5">
+            Happy Valentine's, Nne ❤️
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script>
+  import gsap from "gsap";
+
+  const greeting = document.getElementById("greeting");
+  const greetingText = document.getElementById("greeting-text");
+  const letterWrapper = document.getElementById("letter-wrapper");
+  const paper = document.getElementById("paper");
+  const lines = document.querySelectorAll(".letter-line");
+
+  const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+  // Step 1: Greeting fades in with a gentle scale
+  tl.fromTo(
+    greetingText,
+    { opacity: 0, scale: 0.8, y: 30 },
+    { opacity: 1, scale: 1, y: 0, duration: 1.4 }
+  );
+
+  // Step 2: Hold the greeting
+  tl.to({}, { duration: 1.8 });
+
+  // Step 3: Greeting fades out and moves up
+  tl.to(greetingText, {
+    opacity: 0,
+    y: -40,
+    duration: 0.8,
+    ease: "power2.in",
+  });
+
+  // Step 4: Collapse greeting section
+  tl.to(greeting, {
+    height: 0,
+    minHeight: 0,
+    duration: 0.6,
+    ease: "power2.inOut",
+    onComplete: () => {
+      if (greeting) greeting.style.display = "none";
+    },
+  });
+
+  // Step 5: Paper slides in
+  tl.fromTo(
+    letterWrapper,
+    { opacity: 0 },
+    { opacity: 1, duration: 0.5 }
+  );
+  tl.fromTo(
+    paper,
+    { opacity: 0, y: 60, scale: 0.95 },
+    { opacity: 1, y: 0, scale: 1, duration: 1 }
+  );
+
+  // Step 6: Each letter paragraph fades in one by one
+  lines.forEach((line, i) => {
+    tl.fromTo(
+      line,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
+      `-=0.3`
+    );
+  });
+</script>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Lora", serif;
+    background: transparent;
+  }
+
+  /* Animated gradient background */
+  .bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #6a0dad, #4a00e0, #2575d4, #6a0dad);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  /* Greeting section */
+  .greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  #greeting-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 40px rgba(255, 182, 193, 0.5);
+    opacity: 0;
+  }
+
+  /* Letter wrapper */
+  .letter-wrapper {
+    width: 100%;
+    max-width: 680px;
+    padding: 2rem 1rem 4rem;
+    opacity: 0;
+  }
+
+  /* Paper styling */
+  .paper {
+    background: #fefcf3;
+    background-image:
+      linear-gradient(transparent 95%, #e8dcc8 95%);
+    background-size: 100% 2.4em;
+    border-radius: 6px;
+    padding: 3rem 2.8rem;
+    box-shadow:
+      0 4px 24px rgba(0, 0, 0, 0.2),
+      inset 0 0 60px rgba(200, 180, 150, 0.15);
+    position: relative;
+    opacity: 0;
+  }
+
+  .paper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    width: 2px;
+    background: rgba(220, 100, 100, 0.25);
+  }
+
+  .letter-line {
+    font-family: "Lora", serif;
+    font-size: 1.15rem;
+    line-height: 2.4em;
+    color: #3a2e2e;
+    margin-bottom: 1.2em;
+    opacity: 0;
+  }
+
+  .letter-line.closing {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem;
+    color: #c0392b;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  /* Small hearts floating (CSS-only) */
+  .bg::before,
+  .bg::after {
+    content: "❤";
+    position: fixed;
+    font-size: 1.4rem;
+    opacity: 0.12;
+    animation: floatHeart 8s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .bg::before {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .bg::after {
+    top: 60%;
+    right: 12%;
+    animation-delay: 4s;
+  }
+
+  @keyframes floatHeart {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.12; }
+    50% { transform: translateY(-30px) rotate(15deg); opacity: 0.25; }
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    #greeting-text {
+      font-size: 3rem;
+    }
+    .paper {
+      padding: 2rem 1.5rem;
+    }
+    .paper::before {
+      left: 30px;
+    }
+    .letter-line {
+      font-size: 1rem;
+    }
+    .letter-line.closing {
+      font-size: 1.3rem;
+    }
+  }
+</style>
