@@ -13,6 +13,7 @@
   "dependencies": {
     "astro": "^1.6.12",
     "firebase": "^8.2.10",
-    "firebase-tools": "^9.5.0"
+    "firebase-tools": "^9.5.0",
+    "gsap": "^3.14.2"
   }
 }
