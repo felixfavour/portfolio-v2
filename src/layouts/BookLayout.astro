@@ -19,7 +19,13 @@ const { frontmatter } = Astro.props
         {frontmatter.title}
       </h2>
       <div class="row">
-        <div>{frontmatter.pages} pages</div>
+        {
+          frontmatter.pages === 0 ? (
+            <div>Audiobook</div>
+          ) : (
+            <div>{frontmatter.pages} pages</div>
+          )
+        }
         <div>By <span class="bold">{frontmatter.author}</span></div>
       </div>
       <main>

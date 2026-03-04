@@ -8,7 +8,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "merge:stories": "node ./scripts/merge-markdown.mjs stories",
+    "merge:books": "node ./scripts/merge-markdown.mjs books",
+    "merge:all": "node ./scripts/merge-markdown.mjs all"
   },
   "dependencies": {
     "astro": "^1.6.12",

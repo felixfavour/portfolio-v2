@@ -1,14 +1,15 @@
 ---
-import StoryCard from "../components/StoryCard.astro";
+import StoryCard from "../components/StoryCard.astro"
 import Layout from "./Layout.astro"
 const { frontmatter } = Astro.props
 
-let stories = await Astro.glob('../pages/stories/*.md');
-stories = stories.filter((story) => story.frontmatter.tag === frontmatter.tag).filter(story => story.frontmatter.title !== frontmatter.title)
+let stories = await Astro.glob("../pages/stories/*.md")
+stories = stories
+  .filter((story) => story.frontmatter.tag === frontmatter.tag)
+  .filter((story) => story.frontmatter.title !== frontmatter.title)
 // select 4 random stories
 const randomStories = stories.sort(() => Math.random() - 0.5).slice(0, 3)
 stories = randomStories
-
 ---
 
 <Layout
@@ -33,33 +34,41 @@ stories = randomStories
         <div>Read for <span class="bold">{frontmatter.readTime}</span></div>
       </div>
       <main>
-        <div class="cover-img-ctn">
-          <div class="backdrop"></div>
-          <div
-            class="cover-img"
-            style={`background-image: url(${frontmatter.cover})`}
-          >
-          </div>
-        </div>
-        <article>
+        {
+          frontmatter.cover && (
+            <div class="cover-img-ctn">
+              <div class="backdrop" />
+              <div
+                class="cover-img"
+                style={`background-image: url(${frontmatter.cover})`}
+              />
+            </div>
+          )
+        }
+        <article
+          style={frontmatter.cover
+            ? `margin-left: auto; margin-right: auto;`
+            : undefined}
+        >
           <slot />
         </article>
-        <div class="more-stories">
-          <h2 class="ms-title">
-            Read similar stories that might interest you
-          </h2>
-          <div class="ms-stories">
-            {stories.map((story) => (
-              <StoryCard story={story} />
-            ))}
-          </h2>
-        <a
-          aria-label="Revaise LinkedIn link"
-          href="/stories/"
-          class="read-all"
+        <div
+          class="more-stories"
+          style={frontmatter.cover
+            ? `margin-left: auto; margin-right: auto;`
+            : undefined}
         >
-          Read all stories
-        </a>
+          <h2 class="ms-title">Read similar stories that might interest you</h2>
+          <div class="ms-stories">
+            {stories.map((story) => <StoryCard story={story} />)}
+          </div>
+          <a
+            aria-label="Revaise LinkedIn link"
+            href="/stories/"
+            class="read-all"
+          >
+            Read all stories
+          </a>
         </div>
       </main>
     </div>
@@ -121,11 +130,11 @@ stories = randomStories
     display: block;
     font-family: "IBM Plex Serif", sans-serif;
   }
-  
+
   .more-stories {
     max-width: 850px;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
   }
   .ms-title {
     color: var(--primary-dark);

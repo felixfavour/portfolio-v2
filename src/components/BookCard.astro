@@ -3,7 +3,7 @@ export interface Props {
   book: object | any
 }
 
-const { book } = Astro.props;
+const { book } = Astro.props
 ---
 
 <div class="card-ctn">
@@ -11,7 +11,13 @@ const { book } = Astro.props;
     {book.frontmatter.title}
   </a>
   <div class="row">
-    <div>{book.frontmatter.pages} pages</div>
+    {
+      book.frontmatter.pages === 0 ? (
+        <div>Audiobook</div>
+      ) : (
+        <div>{book.frontmatter.pages} pages</div>
+      )
+    }
     <div>By <span class="bold">{book.frontmatter.author}</span></div>
   </div>
 </div>
@@ -31,7 +37,7 @@ const { book } = Astro.props;
     margin-top: 0.6rem;
   }
   .row > div:nth-child(1) {
-    border-right: 2px solid #E7E7E7;
+    border-right: 2px solid #e7e7e7;
     padding-right: 1rem;
     margin-right: 1rem;
   }
